@@ -15,15 +15,16 @@ header, footer{
 header h1{
     font-size: 32px;
     padding-left: 95px;
+    font-family: 'Lato', sans-serif;
 }
 main{
     padding: 0 15px;
 }
 main h2{
     border-bottom: 1px solid black;
+    font-family: 'Lato', sans-serif;
 }
 .profile{
-    float: right;
     box-shadow: 0 0 17px black;
     margin: -70px 10px 10px 0;
     width: 15%;
