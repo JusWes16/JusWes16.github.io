@@ -78,17 +78,34 @@ body {
     padding: 0 7px;
     line-height: 1.4em;
 }
-.visual {
+.fitts {
     background-color: lightgray;
     border: black 0.5px solid;
     border-radius: 10px;
     margin-bottom: 10px;
 }
-.visual h2 {
+.fitts h2 {
     background-color: rgb(68, 72, 92);
     color: white;
     border-radius: 10px 10px 0 0;
     margin-top: 0;
     font-size: 1.1em;
     padding: 3px 0 3px 7px;
+}
+.fitts img {
+    display: block;
+    margin: 0 auto;
+    width: 98%;
+    margin-top: 15px;
+}
+.fitts-web-name {
+    margin: -5px 0 15px 10px;
+    
+}
+.fitts-web-link {
+    margin: -5px 0 10px 10px;
+}
+.fitts-descrip {
+    padding: 0 7px;
+    line-height: 1.4em;
 }
