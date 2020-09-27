@@ -1,25 +1,8 @@
-@media only screen and (max-width: 300px){
-    body{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
-@media only screen and (max-width: 600px){
-    body{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media only screen and (max-width: 2000px){
-    body{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
 body {
     font-family: 'Roboto', sans-serif;
-    grid-gap: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -37,6 +20,7 @@ body {
     background-color: lightgray;
     border: black 0.5px solid;
     border-radius: 10px;
+    margin: 0 10px;
     margin-bottom: 10px;
 }
 .white h2 {
@@ -68,6 +52,7 @@ body {
     background-color: lightgray;
     border: black 0.5px solid;
     border-radius: 10px;
+    margin: 0 10px;
     margin-bottom: 10px;
 }
 .align h2 {
@@ -99,6 +84,7 @@ body {
     background-color: lightgray;
     border: black 0.5px solid;
     border-radius: 10px;
+    margin: 0 10px;
     margin-bottom: 10px;
 }
 .fitts h2 {
