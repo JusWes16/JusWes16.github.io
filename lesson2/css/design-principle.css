@@ -112,3 +112,25 @@ body {
     padding: 0 7px;
     line-height: 1.4em;
 }
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus{
+    color: white;
+}
+footer a:hover{
+    color: honeydew;
+}
+footer{
+    text-align: center;
+    background-color: rgb(18, 18, 53);
+    color: white;
+    max-width: 100%;
+    grid-column: 1/-1;
+    margin-bottom: 10px;
+}
+.legal{
+    font-size: 13px;
+    margin-bottom: -7px;
+}
+.highlight{
+    color: rgb(182, 202, 65);
+    font-size: 12px;
+}
