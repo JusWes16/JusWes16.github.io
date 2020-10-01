@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 30%;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+.pass {
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 25px;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 25px 25px 0 0;
+}
+.name {
+    grid-column: 4/5;
+    color: #001B36;
+    font-size: 11px;
+    text-align: center;
+    margin: -11px 12px 0 0;
+}
+.mobile {
+    grid-column: 1/2;
+    color: #001B36;
+    font-size: 9px;
+    margin: -2px 0 13px 32px;
+}
+.delta-logo {
+    border-radius: 10px;
+    margin: 15px 0 0 20px;
+}
+.airports {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #001B36;
+    color: white;
+}
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center; 
+    background-color: rgb(240, 240, 240);
+}
+.depart-den {
+    grid-column: 1/2;
+    margin: auto;
+    font-size: 9px;
+    color: rgb(75, 92, 136);
+    margin-bottom: -20px;
+    margin-top: 13px;
+    padding: 10px;
+    margin-left: 40px;
+}
+.den {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    margin-left: 30px;
+}
+.city-den {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: auto;
+    font-size: 9px;
+    color: rgb(75, 92, 136);
+    padding: 15px;
+    padding-bottom: 20px;
+    margin-top: -30px;
+    margin-left: 55px;
+}
+.airpic {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: block;
+    margin: auto;
+}
+.arrive-bos {
+    grid-column: 3/4;
+    margin: auto;
+    font-size: 9px;
+    color: rgb(75, 92, 136);
+    margin-bottom: -20px;
+    margin-top: 13px;
+    padding: 10px;
+    margin-right: 44px;
+}
+.bos {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    margin-right: 30px;
+}
+.city-bos {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin: auto;
+    font-size: 9px;
+    color: rgb(75, 92, 136);
+    padding: 15px;
+    padding-bottom: 20px;
+    margin-top: -30px;
+    margin-right: 55px;
+}
+.bar-img {
+    background-color: white;
+}
+.bar {
+    display: block;
+    margin: 0 auto;
+    padding: 25px;
+    padding-bottom: 0;
+
+}
+footer {
+    background-color: white;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-size: 11px;
+    color: #001B36;
+}
+.details h3 {
+    font-size: 9px;
+    font-weight: bold;
+    color: #001B36;
+    margin-bottom: -13px;
+    margin-top: 30px;
+}
+.details p {
+    color: #001B36;
+}

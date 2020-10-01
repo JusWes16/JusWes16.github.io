@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 35%;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+}
+.name {
+    grid-column: 4/5;
+    color: #1e4178ad;
+    font-size: 11px;
+    text-align: center;
+    margin: -11px 0 0 0;
+}
+.mobile {
+    grid-column: 1/2;
+    color: #1e4178a8;
+    font-size: 9px;
+    margin: -2px 0 13px 32px;
+}
+.delta-logo {
+    border-radius: 10px;
+    margin: 15px 0 0 20px;
+}
+.airports {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #161640;
+    color: white;
+}
+
+
+main .details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;    
+}
+
+.details p{
+    font-family: 
+}
+
+.details h3{
+    
+}
