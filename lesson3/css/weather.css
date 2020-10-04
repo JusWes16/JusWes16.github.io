@@ -2,6 +2,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(236, 235, 235);
 }
 .site-plan {
     background-color: rgb(10, 10, 114);
@@ -18,32 +19,32 @@ body {
     margin-top: 0;
     color: rgb(54, 89, 243);
 }
-ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.navigation {
+    display: flexbox;
     margin: 0 auto;
     padding: 0;
     background-color: rgb(2, 2, 78);
 }
-ul li {
+.navigation li {
     list-style: none;
     padding: 10px 50px;
     text-align: center;
     margin: 0 auto;
     font-size: 20px;
+    font-weight: normal;
 }
-ul li:hover {
+.navigation li:hover {
     background-color: rgb(0, 81, 255);
 }
 li a, li a:link, li a:visited, li a:hover, li a:active, li a:focus {
     color: white;
     text-decoration: none;
+    padding: 10px 40px;
+}
+.navigation li a {
+    display: block;
 }
 .content-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 200px;
-    grid-gap: 30px;
     margin: 0;
     background-color: rgb(236, 235, 235);
 }
@@ -62,7 +63,6 @@ li a, li a:link, li a:visited, li a:hover, li a:active, li a:focus {
 }
 .site-domain {
     grid-column: 1/2;
-    grid-row: 2/3;
 }
 .site-domain h2 {
     color: rgb(0, 81, 255);
@@ -74,7 +74,8 @@ li a, li a:link, li a:visited, li a:hover, li a:active, li a:focus {
     font-size: 17px;
 }
 .site-logo {
-    grid-row: 1/-1;
+    grid-column: 2/3;
+    grid-row: 1/3;
     margin-top: 20px;
 }
 .site-logo h2 {
@@ -85,6 +86,7 @@ li a, li a:link, li a:visited, li a:hover, li a:active, li a:focus {
     margin-left: 20px;
     line-height: 1.5em;
     font-size: 17px;
+    margin-right: 20px;
 }
 .logo {
     display: block;
@@ -109,4 +111,120 @@ footer {
 }
 #lastupdated {
     color: yellow;
+}
+
+/*target audience page*/
+
+.target-main {
+    background-color: rgb(236, 235, 235);
+}
+.scenario {
+    grid-column: 1/-1;
+    margin-right: 20px;
+}
+.target h2, .scenario h2, .persona h2{
+    margin-left: 40px;
+    color: rgb(0, 81, 255);
+}
+.target p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.target p, .persona ol, .scenario ul {
+    line-height: 1.5em;
+    font-size: 17px;
+}
+.target, .persona {
+    margin-top: 20px;
+}
+.persona {
+    margin-right: 20px;
+}
+
+/*color scheme page*/
+
+.color-main {
+    background-color: rgb(236, 235, 235);
+    margin: 0;
+}
+.color-table {
+    margin: 40px auto;
+    border: 1px solid rgb(10, 10, 114);
+    border-collapse: collapse;
+}
+.color-table th {
+    color: rgb(0, 81, 255);
+    padding: 5px 10px;
+    border: 1px solid rgb(10, 10, 114);
+}
+.color-table td {
+    padding: 4px 15px;
+    border: 1px solid rgb(10, 10, 114);
+    text-align: center;
+}
+.color-table th, .color-table td {
+    border-collapse: collapse;
+    background-color: white;
+}
+#sample1 {
+    background-color: white;
+}
+#sample12 {
+    background-color: rgb(10, 10, 114);
+}
+#sample2 {
+    background-color: white;
+}
+#sample22 {
+    background-color: rgb(2, 2, 78);
+}
+#sample3 {
+    background-color: white;
+}
+#sample32 {
+    background-color: rgb(0, 81, 255);
+}
+#sample4 {
+    background-color: black;
+}
+#sample42 {
+    background-color: rgb(236, 235, 235);
+}
+#sample5 {
+    background-color: rgb(0, 81, 255);
+}
+#sample52 {
+    background-color: rgb(236, 235, 235);
+}
+#sample6 {
+    background-color: white;
+}
+#sample62 {
+    background-color: rgb(10, 10, 114);
+}
+
+/*typography*/
+
+.typo-main {
+    background-color: rgb(236, 235, 235);
+    margin: 0;
+}
+.typo-table {
+    margin: 40px auto;
+    border: 1px solid rgb(10, 10, 114);
+    border-collapse: collapse;
+}
+.typo-table th {
+    color: rgb(0, 81, 255);
+    padding: 5px 50px;
+    border: 1px solid rgb(10, 10, 114);
+}
+.typo-table td {
+    padding: 4px 15px;
+    border: 1px solid rgb(10, 10, 114);
+    text-align: center;
+}
+.typo-table th, .typo-table td {
+    border-collapse: collapse;
+    background-color: white;
 }
