@@ -1,0 +1,40 @@
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(236, 235, 235);
+}
+header {
+    display: grid;
+    grid-template-columns: 70px 1fr 100px;
+    background-color: rgb(10, 10, 114);
+    color: white;
+}
+header h1 {
+    font-size: 1.1em;
+    margin: 20px 0 -13px 5px;
+}
+header p {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+.navigation li {
+    display: none;
+}
+.navigation li:first-child {
+    display: block;
+    margin-left: 10px;
+}
+.navigation li:first-child a {
+    color: rgb(54, 89, 243);
+    font-size: 2em;
+    text-decoration: none;
+}
+.responsive li {
+    display: block;
+}
+.preston {
+    font-size: 1.2em;
+    margin: 0 0 0 10px;
+    padding: 6px;
+}

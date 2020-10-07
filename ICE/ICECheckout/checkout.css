@@ -1,0 +1,33 @@
+/*Order Summary*/
+
+body {
+    background-color: #F5F5F5;
+    color: #6B6B6B;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sales-info {
+    margin: 0 auto;
+}
+.order-summary h2 {
+    margin-left: 60px;
+    font-size: 1.5em;
+}
+.sales-total {
+    margin-left: 55px;
+}
+.price4 {
+    color: #1C6CE5;
+    padding-left: 68px;
+}
+
+/*Payment Details*/
+
+@media only screen and (min-width: 32.5em) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
