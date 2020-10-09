@@ -6,9 +6,13 @@ body {
 }
 header {
     display: grid;
-    grid-template-columns: 70px 1fr 100px;
+    grid-template-columns: 70px 1fr 80px;
+    grid-template-rows: 1fr;
     background-color: rgb(10, 10, 114);
     color: white;
+}
+.logo {
+    max-width: 70px;
 }
 header h1 {
     font-size: 1.1em;
@@ -18,23 +22,161 @@ header p {
     font-size: 0.8em;
     margin-left: 10px;
 }
-.navigation li {
+nav {
     display: none;
+    grid-column: 1/-1;
+    text-align: center;
+    background-color: rgb(2, 2, 78);
 }
-.navigation li:first-child {
+#navigation {
+    padding-left: 0;
+}
+#navigation li {
+    list-style-type: none;
+    padding: 0;
+}
+#navigation li a {
+    color: white;
+    text-decoration: none;
     display: block;
-    margin-left: 10px;
+    font-size: 1.3em;
+    padding: 10px;
 }
-.navigation li:first-child a {
+#navigation li a:hover {
+    background-color: rgb(54, 89, 243);
+}
+.ham {
     color: rgb(54, 89, 243);
     font-size: 2em;
     text-decoration: none;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 20px;
 }
-.responsive li {
-    display: block;
+.responsive {
+    display: block !important;
 }
 .preston {
     font-size: 1.2em;
     margin: 0 0 0 10px;
     padding: 6px;
+}
+.summery h2, .summery p {
+    margin: 10px 0 0 20px;
+}
+.summery h2 {
+    font-size: 1em;
+}
+.summery p {
+    margin-bottom: 10px;
+}
+.five-day {
+    border: black 1px solid;
+}
+.five-day h2 {
+    background-color: rgb(10, 10, 114);
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 25px;
+    margin-top: 0;
+}
+.five-day h3, .five-day p, .five-day img {
+    margin-left: 20px;
+}
+footer {
+    background-color: rgb(10, 10, 114);
+    color: white;
+}
+footer h3 {
+    margin-top: 0;
+    padding: 10px 0 0 20px;
+    font-size: 1em;
+}
+footer p {
+    padding-left: 20px;
+    font-size: 0.9em;
+}
+footer .map {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.legal, .highlight {
+    text-align: center;
+    padding-left: 0;
+}
+.legal a {
+    color: white;
+}
+.highlight {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+#lastupdated {
+    color: yellow;
+}
+
+@media only screen and (min-width: 60em) {
+    .logo {
+        margin-left: 150px;
+        max-width: 140px;
+    }
+    .title {
+        margin-left: 220px;
+        margin-top: 30px;
+    }
+    .title h1 {
+        font-size: 1.8em;
+    }
+    .ham {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    #navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 150px;
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation li a {
+        padding: 15px;
+    }
+    .preston {
+        margin-left: 150px;
+        font-size: 2em;
+    }
+    .hero {
+        margin: 0 150px;
+    }
+    .five-day {
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 150px;
+        margin-bottom: 10px;
+    }
+    .summery {
+        max-width: 250px;
+        border: black 1px solid;
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .map {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .contact-info {
+        grid-column: 2/3;
+    }
+    .footer-bar {
+        grid-column: 1/-1;
+    }
 }

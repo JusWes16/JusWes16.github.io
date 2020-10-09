@@ -1,4 +1,12 @@
-const hambutton = document.querySelector('.ham');
-const mainnav = document.querySelector('.navigation')
+ window.addEventListener('load', (event)=>{
+    const lu = document.querySelector('#lastupdated');
+    lu.textContent = document.lastModified;
 
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+    const cry = document.querySelector('#copyrightyear');
+    cry.textContent = new Date().getFullYear();
+})
+
+function menu(){
+    document.getElementById("navi").classList.toggle("responsive");
+ 
+ } 
