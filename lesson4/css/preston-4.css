@@ -30,6 +30,7 @@ nav {
 }
 #navigation {
     padding-left: 0;
+    margin-top: 0;
 }
 #navigation li {
     list-style-type: none;
@@ -44,6 +45,7 @@ nav {
 }
 #navigation li a:hover {
     background-color: rgb(54, 89, 243);
+    text-decoration: underline;
 }
 .ham {
     color: rgb(54, 89, 243);
@@ -70,6 +72,23 @@ nav {
 .summery p {
     margin-bottom: 10px;
 }
+.five-large {
+    display: none;
+    margin: 0 150px;
+}
+.five-large h3 {
+    margin-left: 25px;
+}
+.five-day-large {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(10, 10, 114);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-size: 1.1em;
+}
 .five-day {
     border: black 1px solid;
 }
@@ -78,7 +97,7 @@ nav {
     color: white;
     font-size: 1.1em;
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     margin-top: 0;
 }
 .five-day h3, .five-day p, .five-day img {
@@ -117,14 +136,14 @@ footer .map {
     color: yellow;
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 50em) {
     .logo {
         margin-left: 150px;
-        max-width: 140px;
+        max-width: 100px;
     }
     .title {
-        margin-left: 220px;
-        margin-top: 30px;
+        margin-left: 180px;
+        margin-top: 10px;
     }
     .title h1 {
         font-size: 1.8em;
@@ -153,11 +172,17 @@ footer .map {
     .hero {
         margin: 0 150px;
     }
+    .five-large {
+        display: block;
+    }
     .five-day {
         grid-template-columns: 1fr 1fr;
         max-width: 1200px;
         margin: 0 150px;
         margin-bottom: 10px;
+    }
+    .five-day h2 {
+        display: none;
     }
     .summery {
         max-width: 250px;
@@ -178,5 +203,18 @@ footer .map {
     }
     .footer-bar {
         grid-column: 1/-1;
+    }
+}
+@media only screen and (min-width: 80em) {
+    .logo {
+        margin-left: 150px;
+        max-width: 140px;
+    }
+    .title {
+        margin-left: 220px;
+        margin-top: 30px;
+    }
+    .title h1 {
+        font-size: 1.8em;
     }
 }
