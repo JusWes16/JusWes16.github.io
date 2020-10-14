@@ -10,6 +10,9 @@ body {
     text-align: center;
     padding: 12px;
 }
+.notification a {
+    color: black;
+}
 header {
     display: grid;
     grid-template-columns: 70px 1fr 80px;
