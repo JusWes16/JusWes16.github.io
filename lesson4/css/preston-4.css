@@ -4,6 +4,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(236, 235, 235);
 }
+.notification {
+    max-width: 100%;
+    background-color: rgb(65, 97, 238);
+    text-align: center;
+    padding: 12px;
+}
 header {
     display: grid;
     grid-template-columns: 70px 1fr 80px;
