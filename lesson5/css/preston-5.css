@@ -70,32 +70,58 @@ nav {
 }
 .preston {
     font-size: 1.2em;
-    margin: 0 0 0 10px;
-    padding: 6px;
+    margin: 0 0 0 20px;
+    padding: 10px 0;
     color: rgb(54, 89, 243);
+}
+.banner {
+    display: grid;
+    grid-template-columns: 30px 250px 1fr;
+    grid-template-rows: 30px 1fr 40px;
 }
 .hero {
     max-width: 100%;
-    margin: 0 auto;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
 }
-.summery h2, .summery p {
-    margin: 10px 0 0 20px;
+.summery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 20px);
+    border: black 1px solid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgba(211, 211, 211, 0.877);
+    height: 145px;
 }
 .summery h2 {
     font-size: 1em;
     color: rgb(54, 89, 243);
+    grid-column: 1/-1;
+    margin: 10px 0 0 15px;
+}
+.summery p, .summery h4{
+    padding: 0;
+    font-size: 12px;
+}
+.summery h4 {
+    text-align: right;
 }
 .summery p {
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin: 17px 0 0 10px;
+    color: rgb(104, 60, 3);
+    font-weight: 500;
 }
 .five-large {
     display: none;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .five-large h3 {
-    margin-left: 25px;
+    margin: 20px 0 30px 0;
     color: rgb(54, 89, 243);
-    margin-bottom: 25px;
+    font-size: 1.5em;
+    text-align: center;
 }
 .five-day-large {
     display: grid;
@@ -109,6 +135,9 @@ nav {
 }
 .article {
     border: black 1px solid;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: rgba(54, 89, 243, 0.445);
 }
 .article h2 {
     background-color: rgb(10, 10, 114);
@@ -118,7 +147,7 @@ nav {
     padding: 15px;
     margin-top: 0;
 }
-.article h3, .article p, .article img {
+.article h3, .article p {
     margin-left: 20px;
 }
 .article h3 {
@@ -130,6 +159,8 @@ nav {
 .article-img {
     max-width: 90%;
     margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 1px 10px 8px #888888;
 }
 footer {
     background-color: rgb(10, 10, 114);
@@ -137,11 +168,11 @@ footer {
 }
 footer h3 {
     margin-top: 0;
-    padding: 10px 0 0 20px;
-    font-size: 1em;
+    padding: 10px 0 0 30px;
+    font-size: 1.2em;
 }
 footer p {
-    padding-left: 20px;
+    padding-left: 40px;
     font-size: 0.9em;
 }
 footer .map {
@@ -208,27 +239,15 @@ footer .map {
         margin-bottom: 5px;
     }
     .banner {
-        display: grid;
-        grid-template-columns: 50px 250px 1fr;
-        grid-template-rows: 50px 1fr 50px;
-    }
-    .hero {
-        max-width: 100%;
-        grid-column: 1/-1;
-        grid-row: 1/-1;
-    }
-    .summery {
-        border: black 1px solid;
-        grid-column: 2/3;
-        grid-row: 2/3;
-        background-color: rgba(211, 211, 211, 0.808);
+        grid-template-columns: 60px 250px 1fr;
+        grid-template-rows: 60px 1fr 50px;
     }
     .five-large {
         display: block;
     }
     .article {
         margin-bottom: 10px;
-        height: 200px;
+        max-width: 100%;
     }
     .article h2 {
         display: none;
@@ -274,5 +293,9 @@ footer .map {
     }
     .title h1 {
         font-size: 1.8em;
+    }
+    .banner {
+        grid-template-columns: 70px 250px 1fr;
+        grid-template-rows: 70px 1fr 50px;
     }
 }
