@@ -9,10 +9,9 @@ body {
     background-color: rgb(65, 97, 238);
     text-align: center;
     padding: 12px;
-}
-.notification a {
-    color: black;
-    text-decoration: none;
+    font-weight: bold;
+    color: rgb(204, 170, 18);
+    font-size: 1.2em;
 }
 header {
     display: grid;
@@ -53,6 +52,10 @@ nav {
     font-size: 1.3em;
     padding: 10px;
 }
+#navigation li a:active, #navigation li a:visited {
+    background-color: rgb(54, 89, 243);
+    text-decoration: underline;
+}
 #navigation li a:hover {
     background-color: rgb(54, 89, 243);
     text-decoration: underline;
@@ -87,51 +90,74 @@ nav {
 .summery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 20px);
+    grid-template-rows: repeat(5, 30px);
     border: black 1px solid;
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: rgba(211, 211, 211, 0.877);
-    height: 145px;
+    height: 210px;
 }
 .summery h2 {
-    font-size: 1em;
+    font-size: 1.2em;
     color: rgb(54, 89, 243);
     grid-column: 1/-1;
     margin: 10px 0 0 15px;
 }
 .summery p, .summery h4{
     padding: 0;
-    font-size: 12px;
+    font-size: 1.0em;
 }
 .summery h4 {
     text-align: right;
 }
 .summery p {
-    margin: 17px 0 0 10px;
+    margin: 21px 0 0 10px;
     color: rgb(104, 60, 3);
     font-weight: 500;
 }
-.five-large {
+.five {
     display: none;
     max-width: 800px;
     margin: 0 auto;
 }
-.five-large h3 {
-    margin: 20px 0 30px 0;
+.five h3 {
+    margin: 30px 0 20px 0;
     color: rgb(54, 89, 243);
     font-size: 1.5em;
     text-align: center;
 }
-.five-day-large {
+.five-day {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: rgb(10, 10, 114);
-    color: white;
+    grid-gap: 1px;
     padding: 20px;
     margin-bottom: 20px;
     margin-top: -10px;
     font-size: 1.1em;
+}
+.five-day div {
+    border: 2px solid black;
+    height: 200px;
+    background-color: #F6F6F6;
+}
+.five-day div h4, .five-day div p {
+    text-align: center;
+}
+.five-day div h4 {
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 8px;
+    background-color: rgb(8, 33, 143);
+    color: white;
+    font-size: 1.2em;
+}
+.five-day div img {
+    display: block;
+    margin: 35px auto 0 auto;
+    width: 70px;
+}
+.five-day div p {
+    font-size: 1.3em;
 }
 .article {
     border: black 1px solid;
@@ -145,7 +171,7 @@ nav {
     font-size: 1.1em;
     text-align: center;
     padding: 15px;
-    margin-top: 0;
+    margin: 0 0 0 30px;
 }
 .article h3, .article p {
     margin-left: 20px;
@@ -157,8 +183,9 @@ nav {
     margin-right: 10px;
 }
 .article-img {
-    max-width: 90%;
+    display: block;
     margin: 0 auto;
+    max-width: 80%;
     margin-bottom: 20px;
     box-shadow: 1px 10px 8px #888888;
 }
@@ -201,7 +228,7 @@ footer .map {
     color: yellow;
 }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 63em) {
     main {
         margin: 0 150px;
     }
@@ -239,10 +266,14 @@ footer .map {
         margin-bottom: 5px;
     }
     .banner {
-        grid-template-columns: 60px 250px 1fr;
-        grid-template-rows: 60px 1fr 50px;
+        grid-template-columns: 50px 250px 1fr;
+        grid-template-rows: 50px 1fr 50px;
     }
-    .five-large {
+    .summery h2 {
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+    .five {
         display: block;
     }
     .article {
@@ -259,7 +290,7 @@ footer .map {
         float: right;
         margin-top: -142px;
         margin-right: 50px;
-        width: 200px;
+        width: 250px;
     }
     footer {
         clear: both;
