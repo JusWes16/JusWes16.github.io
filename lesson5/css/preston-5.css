@@ -202,6 +202,16 @@ footer p {
     padding-left: 40px;
     font-size: 0.9em;
 }
+.social-face, .social-insta, .social-twit, .social-you {
+    width: 35px;
+    margin-top: 20px;
+}
+.social-face {
+    margin-left: 40px;
+}
+.social-insta, .social-twit, .social-you{
+    margin-left: 15px;
+}
 footer .map {
     margin: 0 auto;
     padding: 10px;
@@ -307,6 +317,16 @@ footer .map {
     }
     .contact-info {
         grid-column: 2/3;
+    }
+    .social-face, .social-insta, .social-twit, .social-you {
+        width: 35px;
+        margin-top: 20px;
+    }
+    .social-face {
+        margin-left: 40px;
+    }
+    .social-insta, .social-twit, .social-you{
+        margin-left: 15px;
     }
     .footer-bar {
         grid-column: 1/-1;
