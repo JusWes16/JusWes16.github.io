@@ -317,16 +317,7 @@ footer .map {
     }
     .contact-info {
         grid-column: 2/3;
-    }
-    .social-face, .social-insta, .social-twit, .social-you {
-        width: 35px;
         margin-top: 20px;
-    }
-    .social-face {
-        margin-left: 40px;
-    }
-    .social-insta, .social-twit, .social-you{
-        margin-left: 15px;
     }
     .footer-bar {
         grid-column: 1/-1;
