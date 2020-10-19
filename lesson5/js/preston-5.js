@@ -19,3 +19,14 @@ function menu(){
     document.getElementById("navi").classList.toggle("responsive");
  
  } 
+
+var naviContain = document.querySelector("navigation");
+var link = naviContain.getElementsByClassName("links");
+
+for (var i = 0; i < link.length; i++) {
+    link[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+  });
+}

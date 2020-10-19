@@ -56,7 +56,7 @@ nav {
     background-color: rgb(54, 89, 243);
     text-decoration: underline;
 }
-#navigation li a:hover {
+#navigation li a:hover, .active {
     background-color: rgb(54, 89, 243);
     text-decoration: underline;
 }
@@ -293,14 +293,12 @@ footer .map {
     .article h2 {
         display: none;
     }
-    .article p {
-        padding-right: 260px;
-    }
     .article-img {
         float: right;
-        margin-top: -142px;
-        margin-right: 50px;
         width: 250px;
+    }
+    .clear {
+        clear: both;
     }
     footer {
         clear: both;
