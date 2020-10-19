@@ -35,7 +35,7 @@ nav {
     display: none;
     grid-column: 1/-1;
     text-align: center;
-    background-color: rgb(2, 2, 78);
+    background-color: rgba(2, 2, 78, 0.952);
 }
 #navigation {
     padding-left: 0;
@@ -238,7 +238,7 @@ footer .map {
     color: yellow;
 }
 
-@media only screen and (min-width: 63em) {
+@media only screen and (min-width: 57em) {
     main {
         margin: 0 150px;
     }
