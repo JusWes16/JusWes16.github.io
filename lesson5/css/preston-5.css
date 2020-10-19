@@ -17,7 +17,7 @@ header {
     display: grid;
     grid-template-columns: 70px 1fr 80px;
     grid-template-rows: 1fr;
-    background-color: rgb(10, 10, 114);
+    background-color: rgb(10, 10, 170);
     color: white;
 }
 .logo {
@@ -190,7 +190,7 @@ nav {
     box-shadow: 1px 10px 8px #888888;
 }
 footer {
-    background-color: rgb(10, 10, 114);
+    background-color: rgb(10, 10, 170);
     color: white;
 }
 footer h3 {
@@ -293,9 +293,13 @@ footer .map {
     .article h2 {
         display: none;
     }
+    .article h3 {
+        padding-left: 10px;
+    }
     .article-img {
         float: right;
-        width: 250px;
+        width: 270px;
+        margin: 0 30px 15px 10px;
     }
     .clear {
         clear: both;
