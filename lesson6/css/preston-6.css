@@ -1,0 +1,345 @@
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(236, 235, 235);
+}
+.notification {
+    max-width: 100%;
+    background-color: rgb(65, 97, 238);
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    color: rgb(204, 170, 18);
+    font-size: 1.2em;
+}
+header {
+    display: grid;
+    grid-template-columns: 70px 1fr 80px;
+    grid-template-rows: 1fr;
+    background-color: rgb(10, 10, 170);
+    color: white;
+}
+.logo {
+    max-width: 70px;
+}
+header h1 {
+    font-size: 1.1em;
+    margin: 20px 0 -13px 5px;
+}
+header p {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+nav {
+    display: none;
+    grid-column: 1/-1;
+    text-align: center;
+    background-color: rgba(2, 2, 78, 0.952);
+}
+#navigation {
+    padding-left: 0;
+    margin-top: 0;
+}
+#navigation li {
+    list-style-type: none;
+    padding: 0;
+}
+#navigation li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3em;
+    padding: 10px;
+}
+#navigation li a:active, #navigation li a:visited {
+    background-color: rgb(54, 89, 243);
+    text-decoration: underline;
+}
+#navigation li a:hover, .active {
+    background-color: rgb(54, 89, 243);
+    text-decoration: underline;
+}
+.ham {
+    color: rgb(54, 89, 243);
+    font-size: 2em;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.responsive {
+    display: block !important;
+}
+.preston {
+    font-size: 1.2em;
+    margin: 0 0 0 20px;
+    padding: 10px 0;
+    color: rgb(54, 89, 243);
+}
+.banner {
+    display: grid;
+    grid-template-columns: 30px 250px 1fr;
+    grid-template-rows: 30px 1fr 40px;
+}
+.hero {
+    max-width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+.summery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 30px);
+    border: black 1px solid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgba(211, 211, 211, 0.877);
+    height: 210px;
+}
+.summery h2 {
+    font-size: 1.2em;
+    color: rgb(54, 89, 243);
+    grid-column: 1/-1;
+    margin: 10px 0 0 15px;
+}
+.summery p, .summery h4{
+    padding: 0;
+    font-size: 1.0em;
+}
+.summery h4 {
+    text-align: right;
+}
+.summery p {
+    margin: 21px 0 0 10px;
+    color: rgb(104, 60, 3);
+    font-weight: 500;
+}
+.five {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.five h3 {
+    margin: 30px 0 20px 0;
+    color: rgb(54, 89, 243);
+    font-size: 1.5em;
+    text-align: center;
+}
+.five-day {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-size: 1.1em;
+}
+.five-day div {
+    border: 2px solid black;
+    height: 200px;
+    background-color: #F6F6F6;
+}
+.five-day div h4, .five-day div p {
+    text-align: center;
+}
+.five-day div h4 {
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 8px;
+    background-color: rgb(8, 33, 143);
+    color: white;
+    font-size: 1.2em;
+}
+.five-day div img {
+    display: block;
+    margin: 35px auto 0 auto;
+    width: 70px;
+}
+.five-day div p {
+    font-size: 1.3em;
+}
+.article {
+    border: black 1px solid;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: rgba(54, 89, 243, 0.445);
+}
+.article h2 {
+    background-color: rgb(10, 10, 114);
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 15px;
+    margin: 0 0 0 30px;
+}
+.article h3, .article p {
+    margin-left: 20px;
+}
+.article h3 {
+    color: rgb(54, 89, 243);
+}
+.article p {
+    margin-right: 10px;
+}
+.article-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 20px;
+    box-shadow: 1px 10px 8px #888888;
+}
+footer {
+    background-color: rgb(10, 10, 170);
+    color: white;
+}
+footer h3 {
+    margin-top: 0;
+    padding: 10px 0 0 30px;
+    font-size: 1.2em;
+}
+footer p {
+    padding-left: 40px;
+    font-size: 0.9em;
+}
+.social-face, .social-insta, .social-twit, .social-you {
+    width: 35px;
+    margin-top: 20px;
+}
+.social-face {
+    margin-left: 40px;
+}
+.social-insta, .social-twit, .social-you{
+    margin-left: 15px;
+}
+footer .map {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.map-image {
+    max-width: 90%;
+}
+.footer-bar {
+    background-color: rgb(2, 2, 78);
+}
+.legal, .highlight {
+    text-align: center;
+    padding-left: 0;
+}
+.legal a {
+    color: white;
+}
+.highlight {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+#current-date {
+    color: yellow;
+}
+
+@media only screen and (min-width: 57em) {
+    main {
+        margin: 0 150px;
+    }
+    .logo {
+        margin-left: 150px;
+        max-width: 100px;
+    }
+    .title {
+        margin-left: 180px;
+        margin-top: 10px;
+    }
+    .title h1 {
+        font-size: 1.8em;
+    }
+    .ham {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    #navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 150px;
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation li a {
+        padding: 15px;
+    }
+    .preston {
+        font-size: 2.1em;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .banner {
+        grid-template-columns: 50px 250px 1fr;
+        grid-template-rows: 50px 1fr 50px;
+    }
+    .summery h2 {
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+    .five {
+        display: block;
+    }
+    .article {
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+    .article h2 {
+        display: none;
+    }
+    .article h3 {
+        padding-left: 10px;
+    }
+    .article-img {
+        float: right;
+        width: 270px;
+        margin: 0 30px 15px 10px;
+    }
+    .clear {
+        clear: both;
+    }
+    footer {
+        clear: both;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .map {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .map-image {
+        max-width: 70%;
+        margin-left: 120px;
+    }
+    .contact-info {
+        grid-column: 2/3;
+        margin-top: 20px;
+    }
+    .footer-bar {
+        grid-column: 1/-1;
+        background-color: rgb(2, 2, 78);
+    }
+}
+@media only screen and (min-width: 80em) {
+    .logo {
+        margin-left: 150px;
+        max-width: 140px;
+    }
+    .title {
+        margin-left: 220px;
+        margin-top: 30px;
+    }
+    .title h1 {
+        font-size: 1.8em;
+    }
+    .banner {
+        grid-template-columns: 70px 250px 1fr;
+        grid-template-rows: 70px 1fr 50px;
+    }
+}
