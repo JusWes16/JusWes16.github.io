@@ -216,7 +216,7 @@ footer p {
     padding-left: 38px;
 }
 .social-face, .social-insta, .social-twit, .social-you {
-    width: 35px;
+    width: 37px;
     margin-top: 20px;
 }
 .social-face {
@@ -233,6 +233,7 @@ footer .map {
 .map-image {
     max-width: 90%;
     margin: 15px 0 10px 0;
+    border: 1px solid black;
 }
 .footer-bar {
     background-color: rgb(2, 2, 78);
@@ -344,7 +345,7 @@ footer .map {
     .contact-info {
         grid-column: 2/3;
         margin-top: 50px;
-        margin-left: 10px;
+        margin-left: 30px;
     }
     .footer-bar {
         grid-column: 1/-1;
