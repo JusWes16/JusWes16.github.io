@@ -19,13 +19,15 @@ header {
     grid-template-rows: 1fr;
     background-color: rgb(10, 10, 170);
     color: white;
+    height: 80px;
 }
 .logo {
     max-width: 70px;
+    margin-top: 5px;
 }
 header h1 {
     font-size: 1.1em;
-    margin: 20px 0 -13px 5px;
+    margin: 25px 0 -13px 5px;
 }
 header p {
     font-size: 0.8em;
@@ -35,7 +37,7 @@ nav {
     display: none;
     grid-column: 1/-1;
     text-align: center;
-    background-color: rgba(2, 2, 78, 0.952);
+    background-color: rgb(2, 2, 78);
 }
 #navigation {
     padding-left: 0;
@@ -61,7 +63,7 @@ nav {
     text-decoration: underline;
 }
 .ham {
-    color: rgb(54, 89, 243);
+    color: rgb(75, 105, 236);
     font-size: 2em;
     text-decoration: none;
     text-align: right;
@@ -72,8 +74,8 @@ nav {
     display: block !important;
 }
 .preston {
-    font-size: 1.2em;
-    margin: 0 0 0 20px;
+    font-size: 1.3em;
+    text-align: center;
     padding: 10px 0;
     color: rgb(54, 89, 243);
 }
@@ -129,15 +131,15 @@ nav {
 .five-day {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1px;
+    grid-gap: 2px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-top: -10px;
     font-size: 1.1em;
 }
 .five-day div {
-    border: 2px solid black;
-    height: 200px;
+    border: 1px solid black;
+    height: 220px;
     background-color: #F6F6F6;
 }
 .five-day div h4, .five-day div p {
@@ -163,7 +165,7 @@ nav {
     border: black 1px solid;
     max-width: 90%;
     margin: 20px auto;
-    background-color: rgba(54, 89, 243, 0.445);
+    background-color: rgba(22, 56, 209, 0.685);
 }
 .article h2 {
     background-color: rgb(10, 10, 114);
@@ -175,23 +177,31 @@ nav {
 }
 .article h3, .article p {
     margin-left: 20px;
+    color: white;
+    line-height: 1.4em;
 }
 .article h3 {
-    color: rgb(54, 89, 243);
+    /*color: rgb(10, 10, 114);*/
+    padding-bottom: 12px;
+    font-size: 1.3em;
 }
 .article p {
     margin-right: 10px;
+    padding-top: 10px;
 }
 .article-img {
     display: block;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 70%;
     margin-bottom: 20px;
-    box-shadow: 1px 10px 8px #888888;
+    box-shadow: 1px 1px 8px #948f8f85;
+    border: 1px solid rgb(10, 10, 170);
+    border-radius: 2px;
 }
 footer {
     background-color: rgb(10, 10, 170);
     color: white;
+    margin-top: 30px;
 }
 footer h3 {
     margin-top: 0;
@@ -201,6 +211,9 @@ footer h3 {
 footer p {
     padding-left: 40px;
     font-size: 0.9em;
+}
+#phone {
+    padding-left: 38px;
 }
 .social-face, .social-insta, .social-twit, .social-you {
     width: 35px;
@@ -219,6 +232,7 @@ footer .map {
 }
 .map-image {
     max-width: 90%;
+    margin: 15px 0 10px 0;
 }
 .footer-bar {
     background-color: rgb(2, 2, 78);
@@ -226,6 +240,9 @@ footer .map {
 .legal, .highlight {
     text-align: center;
     padding-left: 0;
+}
+.legal {
+    padding-top: 10px;
 }
 .legal a {
     color: white;
@@ -241,6 +258,9 @@ footer .map {
 @media only screen and (min-width: 57em) {
     main {
         margin: 0 150px;
+    }
+    header {
+        height: 150px;
     }
     .logo {
         margin-left: 150px;
@@ -272,8 +292,8 @@ footer .map {
     }
     .preston {
         font-size: 2.1em;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        text-align: left;
+        margin-left: 30px;
     }
     .banner {
         grid-template-columns: 50px 250px 1fr;
@@ -287,7 +307,6 @@ footer .map {
         display: block;
     }
     .article {
-        margin-bottom: 10px;
         max-width: 100%;
     }
     .article h2 {
@@ -295,11 +314,15 @@ footer .map {
     }
     .article h3 {
         padding-left: 10px;
+        padding-bottom: 5px;
     }
     .article-img {
         float: right;
         width: 270px;
-        margin: 0 30px 15px 10px;
+        margin: 5px 30px 10px 10px;
+    }
+    .article p {
+        padding-top: 0;
     }
     .clear {
         clear: both;
@@ -308,6 +331,7 @@ footer .map {
         clear: both;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-top: 60px;
     }
     .map {
         grid-column: 1/2;
@@ -319,11 +343,15 @@ footer .map {
     }
     .contact-info {
         grid-column: 2/3;
-        margin-top: 20px;
+        margin-top: 50px;
+        margin-left: 10px;
     }
     .footer-bar {
         grid-column: 1/-1;
         background-color: rgb(2, 2, 78);
+    }
+    .legal {
+        margin-top: 5px;
     }
 }
 @media only screen and (min-width: 80em) {
