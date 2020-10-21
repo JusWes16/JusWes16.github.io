@@ -39,6 +39,9 @@ nav {
     text-align: center;
     background-color: rgb(2, 2, 78);
 }
+#navi {
+    border-radius: 0 0 20px 20px;
+}
 #navigation {
     padding-left: 0;
     margin-top: 0;
@@ -59,15 +62,15 @@ nav {
     text-decoration: underline;
 }
 #navigation li a:hover, .active {
-    background-color: rgb(54, 89, 243);
-    text-decoration: underline;
+    background-color: rgba(54, 89, 243, 0.801);
+    border-radius: 30px;
 }
 .ham {
     color: rgb(75, 105, 236);
     font-size: 2em;
     text-decoration: none;
     text-align: right;
-    margin-top: 15px;
+    margin-top: 21px;
     margin-right: 20px;
 }
 .responsive {
@@ -125,7 +128,7 @@ nav {
 .five h3 {
     margin: 30px 0 20px 0;
     color: rgb(54, 89, 243);
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-align: center;
 }
 .five-day {
@@ -279,6 +282,9 @@ footer .map {
     }
     nav {
         display: block;
+    }
+    #navi {
+        border-radius: 0;
     }
     #navigation {
         display: grid;
