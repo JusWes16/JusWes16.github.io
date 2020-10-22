@@ -66,31 +66,21 @@ window.addEventListener('load', (event)=>{
         day_3.textContent = curDay[new Date().getDay() + 2];
     } else if (new Date().getDay() >= 5){
         day_3.textContent = curDay[new Date().getDay() - 5];
-    }
+    } 
     
     var day_4 = document.getElementById("fourth");
     if (new Date().getDay() < 4){
         day_4.textContent = curDay[new Date().getDay() + 3];
     } else if (new Date().getDay() >= 4){
         day_3.textContent = curDay[new Date().getDay() - 4];
-    }/* else if (new Date().getDay() == 5){
-        day_3.textContent = curDay[new Date().getDay() - 4];
-    } else if (new Date().getDay() == 6){
-        day_3.textContent = curDay[new Date().getDay() - 4];
-    }*/
+    }
 
     var day_5 = document.getElementById("fifth");
     if (new Date().getDay() < 3){
         day_5.textContent = curDay[new Date().getDay() + 4];
     } else if (new Date().getDay() >= 3){
         day_5.textContent = curDay[new Date().getDay() - 3];
-    } /*else if (new Date().getDay() == 4){
-        day_5.textContent = curDay[new Date().getDay() - 3];
-    } else if (new Date().getDay() == 5){
-        day_5.textContent = curDay[new Date().getDay() - 3];
-    } else if (new Date().getDay() == 6){
-        day_5.textContent = curDay[new Date().getDay() - 3];
-    }*/
+    }
 
 //Code to calculate wind chill temp 
     var temp = document.getElementById("temp-today").innerHTML;
