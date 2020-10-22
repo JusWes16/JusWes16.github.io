@@ -55,16 +55,43 @@ window.addEventListener('load', (event)=>{
     day_1.textContent = curDay[new Date().getDay()];
 
     var day_2 = document.getElementById("second");
-    day_2.textContent = curDay[new Date().getDay() + 1];
+    if (new Date().getDay() < 6){
+        day_2.textContent = curDay[new Date().getDay() + 1];
+    } else {
+        day_2.textContent = curDay[new Date().getDay() - 6];
+    }
 
     var day_3 = document.getElementById("third");
-    day_3.textContent = curDay[new Date().getDay() + 2];
-
+    if (new Date().getDay() < 5){
+        day_3.textContent = curDay[new Date().getDay() + 2];
+    } else if (new Date().getDay() >= 5){
+        day_3.textContent = curDay[new Date().getDay() - 5];
+    }
+    
     var day_4 = document.getElementById("fourth");
-    day_4.textContent = curDay[new Date().getDay() + 3];
+    if (new Date().getDay() < 4){
+        day_4.textContent = curDay[new Date().getDay() + 3];
+    } else if (new Date().getDay() >= 4){
+        day_3.textContent = curDay[new Date().getDay() - 4];
+    }/* else if (new Date().getDay() == 5){
+        day_3.textContent = curDay[new Date().getDay() - 4];
+    } else if (new Date().getDay() == 6){
+        day_3.textContent = curDay[new Date().getDay() - 4];
+    }*/
 
     var day_5 = document.getElementById("fifth");
-    day_5.textContent = curDay[new Date().getDay() + 4];
+    if (new Date().getDay() < 3){
+        day_5.textContent = curDay[new Date().getDay() + 4];
+    } else if (new Date().getDay() >= 3){
+        day_5.textContent = curDay[new Date().getDay() - 3];
+    } /*else if (new Date().getDay() == 4){
+        day_5.textContent = curDay[new Date().getDay() - 3];
+    } else if (new Date().getDay() == 5){
+        day_5.textContent = curDay[new Date().getDay() - 3];
+    } else if (new Date().getDay() == 6){
+        day_5.textContent = curDay[new Date().getDay() - 3];
+    }*/
+    
 })
 
 //Function to toggle hamburger button
