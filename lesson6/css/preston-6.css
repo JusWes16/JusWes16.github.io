@@ -37,7 +37,9 @@ nav {
     display: none;
     grid-column: 1/-1;
     text-align: center;
-    background-color: rgb(2, 2, 78);
+    background-color: rgba(0, 0, 70, 0.87);
+    backdrop-filter: blur(6px);
+    z-index: 5;
 }
 #navi {
     position: -webkit-sticky;
@@ -58,6 +60,7 @@ nav {
     display: block;
     font-size: 1.3em;
     padding: 10px;
+    transition: color 0.3s linear;
 }
 #navigation li a:hover {
     color: rgb(54, 89, 243);
@@ -92,14 +95,12 @@ nav {
     grid-row: 1/-1;
 }
 .summery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 30px);
     border: black 1px solid;
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: rgba(211, 211, 211, 0.877);
     height: 210px;
+    text-align: center;
 }
 .summery h2 {
     font-size: 1.2em;
@@ -107,17 +108,20 @@ nav {
     grid-column: 1/-1;
     margin: 10px 0 0 15px;
 }
-.summery p, .summery h4{
-    padding: 0;
-    font-size: 1.0em;
+hr {
+    max-width: 74%;
 }
-.summery h4 {
-    text-align: right;
+.summery #current {
+    margin-top: -3px;
 }
 .summery p {
-    margin: 21px 0 0 10px;
-    color: rgb(104, 60, 3);
+    padding: 0;
+    font-size: 1.0em;
+    color: rgb(240, 28, 28);
     font-weight: 500;
+}
+.summery b {
+    color: rgb(104, 60, 3);
 }
 .five {
     display: none;
@@ -133,7 +137,7 @@ nav {
 .five-day {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 2px;
+    grid-gap: 3px;
     padding: 20px;
     margin-bottom: 40px;
     margin-top: -10px;
@@ -162,6 +166,13 @@ nav {
 }
 .five-day div p {
     font-size: 1.3em;
+}
+.day1, .day2, .day3, .day4, .day5 {
+    transition: transform 0.5s;
+    z-index: 1;
+}
+.day1:hover, .day2:hover, .day3:hover, .day4:hover, .day5:hover {
+    transform: scale(1.07, 1.07);
 }
 .article {
     border: black 1px solid;

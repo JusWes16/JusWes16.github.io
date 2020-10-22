@@ -21,7 +21,7 @@
             <h1><b>Live Weather Report</b></h1>
             <p><i>Where the news is never shady</i></p>
         </div>
-        <a class="ham" href="#" onclick="menu()">&#9776  </a>
+        <a class="ham" href="#" onclick="menu()">&#9776</a>
     </header>
 
     <nav id="navi">
@@ -48,16 +48,12 @@
             
             <section class="summery">
                 <h2>Weather Summery</h2>
-                <h4>Currently:</h4>
-                <p>Sunny</p>
-                <h4>High:</h4>
-                <p>76 &#8457;</p>
-                <h4>Wind Chill:</h4>
-                <p>&#8457;</p>
-                <h4>Humidity:</h4>
-                <p>23%</p>
-                <h4>Wind Speed:</h4>
-                <p>5 MPH</p>
+                <hr>
+                <p id="current"><b>Currently:</b> Sunny</p>
+                <p><b>High:</b> <span>76</span>&#8457;</p>
+                <p><b>Wind Chill:</b> <span id="wind-chill"></span>&#8457;</p>
+                <p><b>Humidity:</b> 23%</p>
+                <p><b>Wind Speed:</b> <span id="wind-speed">5</span> MPH</p>
             </section>   
         </div>
 
@@ -67,7 +63,7 @@
                 <div class="day1">
                     <h4 id="first"></h4>
                     <img src="images/sun-cloud.png">
-                    <p>68 &#8457;</p>
+                    <p><span id="temp-today">68</span> &#8457;</p>
                 </div>
                 <div class="day2">
                     <h4 id="second"></h4>
