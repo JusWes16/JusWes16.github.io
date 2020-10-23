@@ -98,15 +98,14 @@ window.addEventListener('load', (event) => {
 function menu() {
 	document.getElementById("navi").classList.toggle("responsive");
 }
-$(function() {
+function current() {
 	// this will get the full URL at the address bar
 	var url = window.location.href;
+	var nav = document.getElementById("navigation");
+	var links = nav.getElementsByTagName(li);
 
-	// passes on every "a" tag
-	$(".navigation a").each(function() {
-		// checks if its the same on the address bar
-		if (url == (this.href)) {
-			$(this).closest("li").addClass("active");
-		}
-	});
-});
+	if (links.href.innerHTML == url){
+		links.classList.remove("active")
+		links.classList.toggle("active")
+	}
+}
