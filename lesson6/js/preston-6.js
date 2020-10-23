@@ -64,8 +64,10 @@ window.addEventListener('load', (event)=>{
     var day_3 = document.getElementById("third");
     if (new Date().getDay() < 5){
         day_3.textContent = curDay[new Date().getDay() + 2];
+        console.log(curDay[new Date().getDay() + 2]);
     } else if (new Date().getDay() >= 5){
         day_3.textContent = curDay[new Date().getDay() - 5];
+        console.log(curDay[new Date().getDay() - 5]);
     } 
     
     var day_4 = document.getElementById("fourth");

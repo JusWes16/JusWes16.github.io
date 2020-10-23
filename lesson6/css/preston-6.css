@@ -88,11 +88,14 @@ nav {
 .banner {
     display: grid;
     grid-template-columns: 30px 250px 1fr;
-    grid-template-rows: 30px 1fr 40px;
+    grid-template-rows: 20px 1fr 40px;
 }
 .hero {
     grid-column: 1/-1;
     grid-row: 1/-1;
+}
+.hero img {
+    max-width: 100%;
 }
 .summery {
     border: black 1px solid;
