@@ -98,15 +98,17 @@ window.addEventListener('load', (event)=>{
     function menu(){
         document.getElementById("navi").classList.toggle("responsive");
     } 
+    $(function() {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
 
- //Applies hover styling to the active navigation link
-    var naviContain = document.querySelector("navigation");
-    var link = naviContain.getElementsByClassName("links");
-
-    for (var i = 0; i < link.length; i++) {
-        link[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-    });
-    }
+        // passes on every "a" tag
+        $(".navigation a").each(function() {
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).closest("li").addClass("active");
+                //for making parent of submenu active
+               $(this).closest("li").parent().parent().addClass("active");
+            }
+        });
+    }); 

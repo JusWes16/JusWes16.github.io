@@ -68,6 +68,9 @@ nav {
 .active {
     background-color: rgba(54, 89, 243, 0.521);
 }
+.active:hover {
+    color: black;
+}
 .ham {
     color: rgb(75, 105, 236);
     font-size: 2em;
