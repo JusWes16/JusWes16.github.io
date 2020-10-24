@@ -236,6 +236,7 @@ footer p {
     width: 37px;
     margin-top: 20px;
     border-radius: 5px;
+    box-shadow: 1px 1px 8px rgb(1, 7, 43);
 }
 .social-face {
     margin-left: 45px;
@@ -249,6 +250,7 @@ iframe {
     margin-top: 10px;
     height: 200px;
     width: 420px;
+    box-shadow: 8px 8px 8px rgb(1, 7, 43);
 }
 .footer-bar {
     background-color: rgb(2, 2, 78);
