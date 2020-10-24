@@ -74,7 +74,7 @@ window.addEventListener('load', (event) => {
 	if (new Date().getDay() < 4) {
 		day_4.textContent = curDay[new Date().getDay() + 3];
 	} else if (new Date().getDay() >= 4) {
-		day_3.textContent = curDay[new Date().getDay() - 4];
+		day_4.textContent = curDay[new Date().getDay() - 4];
 	}
 
 	var day_5 = document.getElementById("fifth");
@@ -83,29 +83,24 @@ window.addEventListener('load', (event) => {
 	} else if (new Date().getDay() >= 3) {
 		day_5.textContent = curDay[new Date().getDay() - 3];
 	}
-
-	//Code to calculate wind chill temp 
-	var temp = document.getElementById("temp-today").innerHTML;
-	var wind = document.getElementById("wind-speed").innerHTML;
-	var windChill = document.getElementById("wind-chill");
-
-	var chill = 35.74 + (0.6215 * temp) - (35.75 * (Math.pow(wind, 0.16))) + (0.4275 * temp * (Math.pow(wind, 0.16)));
-	windChill.textContent = Math.round(chill, 0);
-
 });
 
 //Function to toggle hamburger button
 function menu() {
 	document.getElementById("navi").classList.toggle("responsive");
 }
-function current() {
-	// this will get the full URL at the address bar
-	var url = window.location.href;
-	var nav = document.getElementById("navigation");
-	var links = nav.getElementsByTagName(li);
 
-	if (links.href.innerHTML == url){
-		links.classList.remove("active")
-		links.classList.toggle("active")
+
+var url = window.location.href;
+var links = document.getElementsByClassName("links");
+console.log(links)
+console.log(links[1].href)
+
+function current() {
+	for (i = 0; i < links.length; i++){
+		if (links[i].href == url){
+			links[i].classList.toggle("active")
+		}
 	}
 }
+

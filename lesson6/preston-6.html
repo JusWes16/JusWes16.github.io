@@ -5,9 +5,9 @@
     <link rel="shortcut icon" href="images/logo.png">
     <meta charset="utf-8">
     <meta name="description" content="Preston Idaho Page">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='css/normalize.css'>
     <link rel="stylesheet" href="css/preston-6.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src='js/preston-6.js'></script>
     <script src="js/windchill.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,12 +27,12 @@
 
     <nav id="navi">
         <ul id="navigation">    
-            <li class="links"><a href="https://juswes16.github.io/" onclick="menu()">Home</a></li>
-            <li class="links"><a href="https://juswes16.github.io/lesson6/preston-6.html" onclick="menu()">Preston</a></li>
-            <li class="links"><a href="https://juswes16.github.io/lesson5/preston-5.html" onclick="menu()">Soda Springs</a></li>
-            <li class="links"><a href="https://juswes16.github.io/lesson4/preston-4.html" onclick="menu()">Fish Haven</a></li>
-            <li class="links"><a href="https://juswes16.github.io/lesson6/preston-6.html" onclick="menu()">Storm Center</a></li>
-            <li class="links"><a href="https://juswes16.github.io/lesson6/preston-6.html" onclick="menu()">Gallery</a></li>
+            <li ><a class="links" href="https://juswes16.github.io/" onclick="menu()" onclick="current()">Home</a></li>
+            <li ><a class="links active" href="https://juswes16.github.io/lesson6/preston-6.html" onclick="menu()" onclick="current()">Preston</a></li>
+            <li ><a class="links" href="https://juswes16.github.io/lesson5/preston-5.html" onclick="menu()" onclick="current()">Soda Springs</a></li>
+            <li ><a class="links" href="https://juswes16.github.io/lesson4/preston-4.html" onclick="menu()" onclick="current()">Fish Haven</a></li>
+            <li ><a class="links" href="#" onclick="menu()" onclick="current()">Storm Center</a></li>
+            <li ><a class="links" href="#" onclick="menu()" onclick="current()">Gallery</a></li>
         </ul>
     </nav>
 
@@ -53,10 +53,10 @@
                 <hr>
                 <p id="current"><b>Currently:</b> Sunny</p>
                 <p><b>High:</b> <span>76</span>&#8457;</p>
-                <p><b>Wind Chill:</b> <span id="wind-chill"></span>&#8457;</p>
+                <p ><b>Wind Chill:</b> <span id="wind-chill"></span><span id="farin">&#8457;</span></p>
                 <p><b>Humidity:</b> 23%</p>
                 <p><b>Wind Speed:</b> <span id="wind-speed">5</span> MPH</p>
-            </section>   
+            </section>
         </div>
 
         <section class="five">
@@ -65,7 +65,7 @@
                 <div class="day1">
                     <h4 id="first"></h4>
                     <img src="images/sun-cloud.png">
-                    <p><span id="temp-today">68</span> &#8457;</p>
+                    <p><span id="temp-today">51</span> &#8457;</p>
                 </div>
                 <div class="day2">
                     <h4 id="second"></h4>
@@ -126,22 +126,25 @@
     <footer>
         <div class="contact-info">
             <h3>Contact Information</h3>
-            <p id="email">&#9993; 123email@gmail.com</p>
-            <p id="phone">&#9743; 869-986-3512</p>
-            <p id="address"><img src="images/location-pin.png" width="7px"> 123 Main St. Rexburg ID, 83440</p>
+            <p id="email"><i class="material-icons" style="font-size: 0.9em;">&#xe554;</i> 123email@gmail.com</p>
+            <p id="phone"><i class="material-icons" style="font-size: 0.9em;">local_phone</i> 869-986-3512</p>
+            <p id="address"><i class="material-icons" style="font-size: 0.9em;">&#xe55f;</i> 123 Main St. Rexburg ID, 83440</p>
             <a href="#"><img class="social-face" src="images/facebook.png"></a>
             <a href="#"><img class="social-insta" src="images/instagram.png"></a>
             <a href="#"><img class="social-twit" src="images/twitter.png"></a>
             <a href="#"><img class="social-you" src="images/youtube.png"></a>
         </div>
        <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628260389!2d-111.9153445197946!3d42.099805311946824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1603470748003!5m2!1sen!2sus" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-           <!--<img class="map-image" src="images/map.webp">-->
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628260389!2d-111.9153445197946!3d42.099805311946824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1603470748003!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
        </section>
        <div class="footer-bar">
            <p class='legal'>&copy;<span id='copyrightyear'></span> | Weston A. Knowlton | Idaho | <a href="https://www.byui.edu/online">BYU-I Online Learning</a> </p>
            <p class='highlight'><span id='current-date'></span></p>
        </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({google: {families: ['Montserrat']}});
+    </script>
 </body>
 </html>

@@ -140,7 +140,7 @@ hr {
 .five-day {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 3px;
+    grid-gap: 8px;
     padding: 20px;
     margin-bottom: 40px;
     margin-top: -10px;
@@ -150,6 +150,7 @@ hr {
     border: 1px solid black;
     height: 220px;
     background-color: #F6F6F6;
+    z-index: 1;
 }
 .five-day div h4, .five-day div p {
     text-align: center;
@@ -172,7 +173,6 @@ hr {
 }
 .day1, .day2, .day3, .day4, .day5 {
     transition: transform 0.5s;
-    z-index: 1;
 }
 .day1:hover, .day2:hover, .day3:hover, .day4:hover, .day5:hover {
     transform: scale(1.07, 1.07);
@@ -228,26 +228,27 @@ footer p {
     padding-left: 40px;
     font-size: 0.9em;
 }
-#phone {
-    padding-left: 38px;
+.material-icons {
+    color: rgb(160, 11, 11);
+    margin-right: 5px;
 }
 .social-face, .social-insta, .social-twit, .social-you {
     width: 37px;
     margin-top: 20px;
+    border-radius: 5px;
 }
 .social-face {
-    margin-left: 40px;
+    margin-left: 45px;
 }
 .social-insta, .social-twit, .social-you{
     margin-left: 15px;
 }
-footer .map {
+iframe {
+    display: block;
     margin: 0 auto;
-    padding: 10px;
-    text-align: center;
-}
-.map {
-    margin: 15px 0 10px 0;
+    margin-top: 10px;
+    height: 200px;
+    width: 420px;
 }
 .footer-bar {
     background-color: rgb(2, 2, 78);
@@ -357,15 +358,18 @@ footer .map {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    .map iframe {
+    iframe {
         margin: 20px 0;
-        margin-left: 90px;
+        margin-left: 150px;
+        height: 300px;
+        width: 500px;
         box-shadow: 8px 8px 8px rgb(1, 7, 43);
     }
     .contact-info {
         grid-column: 2/3;
+        margin-left: 50px;
         margin-top: 50px;
-        margin-left: 30px;
+        margin-bottom: 10px;
     }
     .footer-bar {
         grid-column: 1/-1;
