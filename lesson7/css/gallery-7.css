@@ -30,6 +30,7 @@ nav {
     text-align: center;
     background-color: rgba(0, 0, 70, 0.87);
     backdrop-filter: blur(6px);
+    z-index: 2;
 }
 #navi {
     position: -webkit-sticky;
@@ -108,7 +109,7 @@ nav {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 5; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -200,9 +201,10 @@ iframe {
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    height: 200px;
-    width: 420px;
+    height: 300px;
+    width: 90%;
     box-shadow: 8px 8px 8px rgb(1, 7, 43);
+    border-radius: 5px;
 }
 .footer-bar {
     background-color: rgb(2, 2, 78);
@@ -292,7 +294,7 @@ iframe {
     }
     iframe {
         margin: 20px 0;
-        margin-left: 170px;
+        margin-left: 140px;
         height: 300px;
         width: 500px;
         box-shadow: 8px 8px 8px rgb(1, 7, 43);
@@ -334,4 +336,8 @@ iframe {
     #gallery div {
         box-shadow: 4px 4px 8px black;
     }
+    iframe {
+        margin-left: 170px;
+    }
+    
 }
