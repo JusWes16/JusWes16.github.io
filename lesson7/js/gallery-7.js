@@ -1,5 +1,5 @@
 window.addEventListener('load', (event) => {
-    
+
     //Returns the current date at the bottom in the format "Monday, 12 October 2020"
 	const cd = document.querySelector('#current-date');
 	let day = [
@@ -31,11 +31,6 @@ window.addEventListener('load', (event) => {
 	const cry = document.querySelector('#copyrightyear');
     cry.textContent = new Date().getFullYear();
     
-    //Function to toggle hamburger button
-    function menu() {
-	    document.getElementById("navi").classList.toggle("responsive");
-    }
-
     // Get the modal
     var modal = document.getElementById("myModal");
 
@@ -59,3 +54,8 @@ window.addEventListener('load', (event) => {
     modal.style.display = "none";
     }
 });
+
+//Function to toggle hamburger button
+    function menu() {
+	    document.getElementById("navi").classList.toggle("responsive");
+    }
