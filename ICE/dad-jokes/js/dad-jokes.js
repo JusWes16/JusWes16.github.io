@@ -47,7 +47,7 @@ function newJoke(){
         const joke = getDadJoke()
         .then(function(j){
             for(i = 0; i < num_jokes; i++){
-                ext += j['results'][i]['joke'] + '<br>' + '<br>';
+                text += j['results'][i]['joke'] + '<br>' + '<br>';
                 dad_id.innerHTML = text;
                 if(text.length >200){
                     dad_id.classList.add('extra_small');
