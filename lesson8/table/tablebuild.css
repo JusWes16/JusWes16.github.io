@@ -17,6 +17,11 @@ thead tr th {
     font-size: 34px;
     padding: 10px;
 }
+tbody th {
+    background-color: #628ca6;
+    color: white;
+    font-size: 22px;
+}
 tbody tr td {
     font-size: 22px;
 }
@@ -26,7 +31,7 @@ tbody tr {
 tbody tr:nth-child(odd) {
     background-color:  #e7ffed;
 }
-.dark-blue {
+#dark-blue {
     background-color: #628ca6;
     color: white;
     font-size: 22px;
