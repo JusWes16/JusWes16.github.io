@@ -46,7 +46,14 @@ function newJoke(){
         dad_id.classList.remove('small', 'extra_small');
         const joke = getDadJoke()
         .then(function(j){
-            for(i = 0; i < num_jokes; i++){
+            var jokes = '';
+            if(j['results'].length < num_jokes){
+                jokes = j['results'].length;
+            }
+            else {
+                jokes = num_jokes
+            }
+            for(i = 0; i < jokes; i++){
                 text += j['results'][i]['joke'] + '<br>' + '<br>';
                 dad_id.innerHTML = text;
                 if(text.length >200){
