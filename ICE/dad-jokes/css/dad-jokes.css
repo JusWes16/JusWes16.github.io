@@ -1,0 +1,61 @@
+.dad-bg {
+    background: url('../images/dad-jokes-bg.jpg') no-repeat;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    font-family: 'Coming Soon', cursive;
+    display: grid;
+    grid-template-columns: 300px;
+}
+#dad-joke {
+    align-self: center;
+    font-size: 45px;
+    padding-left: 50px;
+}
+#dad-joke.small {
+    font-size: 32px;
+}
+#dad-joke.extra_small {
+    font-size: 15px;
+}
+#search_bar {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 285px;
+    left: 124px;
+    width: 180px;
+    height: 40px;
+    background-color: rgb(243, 222, 196);
+    border: 2px solid rgb(165, 141, 110);
+    font-family: 'Coming Soon', cursive;
+    font-size: 16px;
+    padding-left: 10px;
+}
+#num_jokes {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 240px;
+    left: 270px;
+    width: 45px;
+    height: 40px;
+    background-color: rgb(243, 222, 196);
+    border: 2px solid rgb(165, 141, 110);
+    font-family: 'Coming Soon', cursive;
+    font-size: 14px;
+    padding-left: 10px;
+}
+#new_joke {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    bottom: 450px;
+    left: 170px;
+    width: 200px;
+    height: 35px;
+    background-color: rgb(182, 155, 121);
+    font-size: 16px;
+    font-family: 'Coming Soon', cursive;
+    font-weight: bold;
+}
