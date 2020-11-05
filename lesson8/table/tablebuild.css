@@ -1,0 +1,43 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+table, tr, td, th {
+    border: 1px solid #BBBBBB;
+    border-collapse: collapse;
+    text-align: center;
+}
+table {
+    margin: 0 auto;
+    width: 350px;
+    height: 400px;
+    box-shadow: 10px 10px 15px #628ca6;
+}
+thead tr:first-child th {
+    background-color: #7fb9c2;
+    font-size: 34px;
+    padding: 10px;
+}
+thead tr:nth-child(2) th {
+    font-size: 22px;
+    background-color: #628ca6;
+    color: white;
+    padding: 10px;
+}
+tbody tr td {
+    font-size: 22px;
+}
+tbody tr:nth-child(odd) {
+    background-color:  #e7f0ed;
+}
+tbody tr:nth-child(even) {
+    background-color:  #e7ffed;
+}
+#nov-goal {
+    background-color: #628ca6;
+    color: white;
+}
+tfoot td {
+    padding: 10px 0;
+    background-color: #7fb9c2;
+    font-size: 14px;
+}
