@@ -128,8 +128,15 @@ form legend {
     font-size: 20px;
     border-radius: 20px;
     margin: 0 auto;
+    margin-top: 30px;
     cursor: pointer;
-    max-width: 400px;
+    width: 270px;
+    transition: background-color 0.5s, transform 1s;
+    box-shadow: 2px 2px 8px rgb(30, 30, 165);
+}
+.button:hover {
+    transform: scale(1.1);
+    background-color: rgb(75, 105, 236);
 }
 
 /*----------------------------- FOOTER ----------------------------*/

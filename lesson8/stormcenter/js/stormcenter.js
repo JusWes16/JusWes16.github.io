@@ -36,7 +36,7 @@ window.addEventListener('load', (event) => {
     function menu() {
 	    document.getElementById("navi").classList.toggle("responsive");
 	}
-
+//Function to display weather severity rating 
 	function adjustRating(rating) {
 		document.getElementById("severity").innerHTML = rating;
 	}
