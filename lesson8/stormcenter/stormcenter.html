@@ -32,10 +32,10 @@
             </ul>
         </nav>
 
-        <form method="GET" action="thanks.html">
+        <form method="GET" action="thanks.html" id="stormcenter">
             <fieldset>
                 <legend>Contact Info</legend>
-                <label>Full Name: <input type="text" name="name" required></label>
+                <label>Full Name: <input type="text" name="name" pattern="[A-Z a-z]+" minlength="5" required></label>
                 <label>Email: <input type="email" name="email" placeholder="email@email.com"></label>
                 <label>Phone Number: <input type="tel" name="phone" required></label>
                 <label>Zip Code: <input type="number" name="zip" required></label>
@@ -73,7 +73,7 @@
                     <textarea id="comments" name="comments" rows="15" cols="62"></textarea>
                 </label> 
             </fieldset>
-            <input class="button" type="submit" value="Report your conditions">
+            <input class="button" form="stormcenter" type="submit" value="Report your conditions">
         </form>
     
         <footer>
