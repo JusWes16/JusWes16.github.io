@@ -1,0 +1,259 @@
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(236, 235, 235);
+}
+header {
+    display: grid;
+    grid-template-columns: 70px 1fr 80px;
+    grid-template-rows: 1fr;
+    background-color: rgb(10, 10, 170);
+    color: white;
+    height: 80px;
+    margin-bottom: 40px;
+}
+.logo {
+    max-width: 70px;
+    margin-top: 5px;
+}
+header h1 {
+    font-size: 1.1em;
+    margin: 25px 0 -13px 5px;
+}
+header p {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+nav {
+    display: none;
+    grid-column: 1/-1;
+    text-align: center;
+    background-color: rgba(0, 0, 70, 0.87);
+    backdrop-filter: blur(6px);
+    z-index: 2;
+}
+#navi {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#navigation {
+    padding-left: 0;
+    margin-top: 0;
+}
+#navigation li {
+    list-style-type: none;
+    padding: 0;
+}
+#navigation li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3em;
+    padding: 10px;
+    transition: color 0.3s linear;
+}
+#navigation li a:hover {
+    color: rgb(54, 89, 243);
+}
+.active {
+    background-color: rgba(54, 89, 243, 0.521);
+}
+.ham {
+    color: rgb(75, 105, 236);
+    font-size: 2em;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 21px;
+    margin-right: 20px;
+}
+.responsive {
+    display: block;
+}
+
+/* ---------------------------- FORM ---------------------------------*/
+
+label, .danger, #danger, #comment {
+    display: block;
+    margin-bottom: 15px;
+    color: rgb(2, 2, 78);
+    font-size: 14px;
+}
+input, select {
+    width: 96%;
+    margin-top: 8px;
+    padding: 5px;
+    display: block;
+}
+select {
+    width: 99%;
+    cursor: pointer;
+}
+#type, #range {
+    cursor: pointer;
+}
+#severity {
+    display: block;
+    text-align: center;
+}
+.danger {
+    display: inline-block;
+    padding: 0 15px;
+}
+form fieldset {
+    width: 90%;
+    max-width: 700px;
+    margin: 15px auto;
+    border: 1px solid rgb(2, 2, 78);
+    border-radius: 10px;
+}
+form legend {
+    margin-left: 5px;
+    padding: 5px;
+    color: rgb(75, 105, 236);
+    font-size: 18px;
+}
+#comments {
+    display: block;
+    width: 98%;
+    margin: 0 auto;
+}
+.button {
+    display: block;
+    border: none;
+    background-color: rgb(2, 2, 78);
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 400px;
+}
+
+/*----------------------------- FOOTER ----------------------------*/
+
+footer {
+    background-color: rgb(10, 10, 170);
+    color: white;
+    margin-top: 30px;
+}
+footer h3 {
+    padding-top: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+footer p {
+    font-size: 0.9em;
+    text-align: center;
+}
+.material-icons {
+    color: rgb(160, 11, 11);
+    margin-right: 5px;
+}
+.social-face, .social-insta, .social-twit, .social-you {
+    display: block;
+    margin: 0 auto;
+    width: 37px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgb(1, 7, 43);
+}
+#social-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    width: 250px;
+}
+.footer-bar {
+    background-color: rgb(2, 2, 78);
+}
+.legal, .highlight {
+    text-align: center;
+    padding-left: 0;
+}
+.legal {
+    padding-top: 10px;
+}
+.legal a {
+    color: white;
+}
+.highlight {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+#current-date {
+    color: yellow;
+}
+
+@media only screen and (min-width: 50em) {
+    main {
+        max-width: 100%;
+        margin: 0 150px;
+    }
+    header {
+        height: 115px;
+        margin-bottom: 0;
+    }
+    .logo {
+        margin-left: 150px;
+        max-width: 100px;
+    }
+    .title {
+        margin-left: 180px;
+        margin-top: 10px;
+    }
+    .title h1 {
+        font-size: 1.8em;
+    }
+    .ham {
+        display: none;
+    }
+    nav {
+        display: block;
+        margin-bottom: 40px;
+    }
+    #navi {
+        border-radius: 0;
+    }
+    #navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 150px;
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation li a {
+        padding: 15px;
+    }
+    form legend {
+        font-size: 21px;
+    }
+    label, .danger, #danger, #comment {
+        font-size: 18px;
+    }
+    footer {
+        margin-top: 30px;
+    }
+    .footer-bar {
+        grid-column: 1/-1;
+    }
+}
+@media only screen and (min-width: 80em) {
+    header {
+        height: 150px;
+    }
+    .logo {
+        margin-left: 150px;
+        max-width: 140px;
+    }
+    .title {
+        margin-left: 220px;
+        margin-top: 30px;
+    }
+    .title h1 {
+        font-size: 1.8em;
+    }
+}
