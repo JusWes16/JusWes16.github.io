@@ -263,3 +263,27 @@ footer p {
         font-size: 1.8em;
     }
 }
+
+/*-----------------------------thnaks.html-----------------------*/
+
+#thanks {
+    width: 90%;
+    max-width: 700px;
+    margin: 70px auto;
+    border: 1.5px solid rgb(2, 2, 78);
+    box-shadow: 2px 2px 8px darkblue;
+}
+#thanks h1 {
+    text-align: center;
+    color: rgb(10, 10, 170);
+}
+hr {
+    color: rgb(10, 10, 170);
+    margin: -10px 30px 0 30px;
+}
+#thanks p {
+    padding: 0 20px;
+    line-height: 1.7em;
+    text-align: center;
+    
+}
