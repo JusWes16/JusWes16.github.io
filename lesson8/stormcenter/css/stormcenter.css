@@ -99,6 +99,7 @@ select {
 .danger {
     display: inline-block;
     padding: 0 15px;
+    cursor: pointer;
 }
 form fieldset {
     width: 90%;
@@ -130,12 +131,12 @@ form legend {
     margin-top: 30px;
     cursor: pointer;
     width: 270px;
-    transition: background-color 0.5s, transform 1s;
-    box-shadow: 2px 2px 8px rgb(30, 30, 165);
+    transition: background-color 0.5s, transform 1s, box-shadow 0.5s;
 }
 .button:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     background-color: rgb(75, 105, 236);
+    box-shadow: 2px 2px 8px rgb(30, 30, 165);
 }
 
 /*----------------------------- FOOTER ----------------------------*/
