@@ -1,0 +1,53 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+.team-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+#set-won, #set-lost, #match-won, #match-lost, #points-earned, #points-allowed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 1s, box-shadow 1s, opacity 1s;
+}
+#set-won:hover, #set-lost:hover, #match-won:hover, #match-lost:hover, #points-earned:hover, #points-allowed:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 5px #95d600;
+    opacity: 0.75;
+}
+#set-won {
+    background-color: #004d71;
+    color: white;
+}
+#set-lost {
+    background-color: #7d7d80;
+    color: lightgray;
+}
+#match-won {
+    background-color: #55565a;
+    color: lightgray;
+}
+#match-lost {
+    background-color: #89abbc;
+    color: white;
+}
+#points-earned {
+    background-color: #004d71;
+    color: white;
+}
+#points-allowed {
+    background-color: #7d7d80;
+    color: lightgray;
+}
+.team-stats div h2 {
+    font-size: 30px;
+}
+.team-stats div p {
+    font-size: 25px;
+}

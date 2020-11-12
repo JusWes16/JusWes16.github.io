@@ -1,0 +1,278 @@
+/*-----------------------HEADER----------------------*/
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(236, 235, 235);
+}
+.notification {
+    max-width: 100%;
+    background-color: rgb(65, 97, 238);
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    color: rgb(204, 170, 18);
+    font-size: 1.2em;
+}
+header {
+    display: grid;
+    grid-template-columns: 70px 1fr 80px;
+    grid-template-rows: 1fr;
+    background-color: rgb(10, 10, 170);
+    color: white;
+    height: 80px;
+}
+.logo {
+    max-width: 70px;
+    margin-top: 5px;
+}
+header h1 {
+    font-size: 1.1em;
+    margin: 25px 0 -13px 5px;
+}
+header p {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+nav {
+    display: none;
+    grid-column: 1/-1;
+    text-align: center;
+    background-color: rgba(0, 0, 70, 0.87);
+    backdrop-filter: blur(6px);
+    z-index: 5;
+}
+#navi {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#navigation {
+    padding-left: 0;
+    margin-top: 0;
+}
+#navigation li {
+    list-style-type: none;
+    padding: 0;
+}
+#navigation li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3em;
+    padding: 10px;
+    transition: color 0.3s linear;
+}
+#navigation li a:hover {
+    color: rgb(54, 89, 243);
+}
+.active {
+    background-color: rgba(54, 89, 243, 0.521);
+    border-radius: 30px;
+}
+.ham {
+    color: rgb(75, 105, 236);
+    font-size: 2em;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 21px;
+    margin-right: 20px;
+}
+.responsive {
+    display: block;
+}
+
+/*-------------------------MAIN--------------------------*/
+
+.preston, .soda, .fish {
+    background-color: rgb(212, 181, 139);
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 5px;
+}
+#towns section h1 {
+    color: white;
+    padding-top: 30px;
+    margin-bottom: -5px;
+    text-shadow: 1px 1px 5px black;
+    font-size: 1.7em;
+}
+#towns section h3 {
+    padding: 0 10px;
+    font-size: 1em;
+    font-style: italic;
+}
+#towns section hr {
+    margin: 0 30px;
+    margin-top: -2px;
+    color: rgb(88, 46, 46);
+}
+#towns section img {
+    max-width: 90%;
+    margin: 15px 0;
+}
+
+/*-------------------------FOOTER------------------------*/
+
+footer {
+    background-color: rgb(10, 10, 170);
+    color: white;
+    margin-top: 30px;
+}
+footer h3 {
+    padding-top: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+footer p {
+    font-size: 0.9em;
+    text-align: center;
+}
+.material-icons {
+    color: rgb(160, 11, 11);
+    margin-right: 5px;
+}
+.social-face, .social-insta, .social-twit, .social-you {
+    display: block;
+    margin: 0 auto;
+    width: 37px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgb(1, 7, 43);
+}
+#social-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    width: 250px;
+}
+.footer-bar {
+    background-color: rgb(2, 2, 78);
+}
+.legal, .highlight {
+    text-align: center;
+    padding-left: 0;
+}
+.legal {
+    padding-top: 10px;
+}
+.legal a {
+    color: white;
+}
+.highlight {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+#current-date {
+    color: yellow;
+}
+
+@media only screen and (min-width: 45em) {
+    #towns section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+    }
+    .preston {
+        margin-top: 30px ;
+    }
+    .preston div, .fish div {
+        margin-top: -15px;
+    }
+    .preston img {
+        padding-left: 15px;
+    }
+    .soda div {
+        grid-column: 2;
+        margin-top: -15px;
+    }
+    .soda img {
+        grid-column: 1;
+        grid-row: 1;
+        padding-left: 15px;
+    }
+    .fish img {
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 57em) {
+    main {
+        max-width: 100%;
+        /*margin: 0 150px;*/
+    }
+    header {
+        height: 150px;
+    }
+    .logo {
+        margin-left: 150px;
+        max-width: 100px;
+    }
+    .title {
+        margin-left: 180px;
+        margin-top: 10px;
+    }
+    .title h1 {
+        font-size: 1.8em;
+    }
+    .ham {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    #navi {
+        border-radius: 0;
+    }
+    #navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 150px;
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation li a {
+        padding: 15px;
+    }
+    footer {
+        margin-top: 30px;
+    }
+    .footer-bar {
+        grid-column: 1/-1;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    main {
+        margin: 0 100px;
+    }
+    #towns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+    #towns section {
+        display: block;
+        margin-top: 30px;
+    }
+    #towns section img {
+        padding: 0;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (min-width: 80em) {
+    .logo {
+        margin-left: 150px;
+        max-width: 140px;
+    }
+    .title {
+        margin-left: 220px;
+        margin-top: 30px;
+    }
+    .title h1 {
+        font-size: 1.8em;
+    }
+}
