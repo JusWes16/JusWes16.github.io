@@ -93,6 +93,10 @@ nav {
     margin: 0 auto;
     box-shadow: 2px 2px 8px black;
     border-radius: 5px;
+    color: black;
+}
+#towns a {
+    text-decoration: none;
 }
 #towns section h1 {
     color: white;
