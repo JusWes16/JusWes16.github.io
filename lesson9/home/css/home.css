@@ -86,7 +86,7 @@ nav {
 
 /*-------------------------MAIN--------------------------*/
 
-.preston, .soda, .fish {
+#towns section {
     background-color: rgb(159, 183, 214);
     text-align: center;
     width: 90%;
@@ -177,26 +177,13 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 20px;
     }
-    .preston {
-        margin-top: 30px ;
-    }
-    .preston div, .fish div {
-        margin-top: -15px;
-    }
-    .preston img {
-        padding-left: 15px;
-    }
-    .soda div {
-        grid-column: 2;
-        margin-top: -15px;
-    }
-    .soda img {
+    #towns section:nth-child(even) img {
         grid-column: 1;
         grid-row: 1;
-        padding-left: 15px;
+        margin-left: 40px;
     }
-    .fish img {
-        padding-left: 15px;
+    #towns section:nth-child(even) div {
+        grid-column: 2;
     }
 }
 
@@ -262,6 +249,11 @@ footer p {
     #towns section img {
         padding: 0;
         margin: 10px 0;
+    }
+    #towns section:nth-child(even) img {
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 0;
     }
 }
 
