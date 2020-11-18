@@ -177,12 +177,16 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 20px;
     }
-    #towns section:nth-child(even) img {
+    #soda section hr {
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+    #soda section img {
         grid-column: 1;
         grid-row: 1;
         margin-left: 40px;
     }
-    #towns section:nth-child(even) div {
+    #soda section div {
         grid-column: 2;
     }
 }

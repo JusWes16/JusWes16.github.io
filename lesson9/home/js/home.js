@@ -76,7 +76,17 @@ fetch(URL)
         town_name.appendChild(text);
         town_name.appendChild(image);
 
-        document.getElementById('towns').appendChild(town_name);
+        //document.getElementById('towns').appendChild(town_name);
+
+        if(towns[i].name == 'Preston'){
+          document.getElementById('preston').appendChild(town_name);
+        }
+        else if(towns[i].name == 'Soda Springs'){
+          document.getElementById('soda').appendChild(town_name);
+        }
+        else{
+          document.getElementById('fish').appendChild(town_name);
+        }
       }
     }
   });
