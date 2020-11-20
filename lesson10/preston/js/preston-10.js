@@ -4,65 +4,45 @@ fetch(URL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    
-    for(i = 0; i < 5; i++){
-        let div = document.createElement('div');
-        let h4 = document.createElement('h4');
-        let image = document.createElement('img');
-        let p = document.createElement('p');
 
-        h4.classList.add('day-' + i);
-        p.classList.add('temp');
+    document.getElementById('current').textContent = jsObject.list[0].weather[0].main;
+    document.getElementById('temp').textContent = Math.round(jsObject.list[0].main.temp, 0);
+    document.getElementById('humid').textContent = jsObject.list[0].main.humidity + '%';
+    document.getElementById('wind-speed').textContent = Math.round(jsObject.list[0].wind.speed, 0);
 
-        h4.textContent = ' ';
-        image.setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png');
-        p.textContent = Math.round(jsObject.list[i].main.temp, 0);
+    x = 0
 
-        div.appendChild(h4);
-        div.appendChild(image);
-        div.appendChild(p);
+    for(i = 0; i < jsObject.list.length; i++){
+        if(jsObject.list[i].dt_txt.includes('18:00:00')){
+            let div = document.createElement('div');
+            let h4 = document.createElement('h4');
+            let image = document.createElement('img');
+            let p = document.createElement('p');
 
-        document.querySelector('div.five-day').appendChild(div);
-        document.getElementById('current').textContent = jsObject.list[0].weather[0].main;
-        document.getElementById('high').textContent = Math.round(jsObject.list[0].main.temp_max, 0);
-        document.getElementById('humid').textContent = jsObject.list[0].main.humidity + '%';
-        document.getElementById('wind-speed').textContent = Math.round(jsObject.list[0].wind.speed, 0);
-    }
-    /*const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-    const desc = jsObject.weather[0].description;  // note how we reference the weather array
-    document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    document.getElementById('icon').setAttribute('alt', desc);*/
+            h4.classList.add('day-' + x);
+            p.classList.add('temp');
+
+            h4.textContent = ' ';
+            image.setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png');
+            p.textContent = Math.round(jsObject.list[i].main.temp, 0) + '\xB0F';
+
+            div.appendChild(h4);
+            div.appendChild(image);
+            div.appendChild(p);
+
+            document.querySelector('div.five-day').appendChild(div);
+
+            x += 1;
+        }
+    }    
 });
-
 
 window.addEventListener('load', (event) => {
 
 	//Returns the current date at the bottom in the format "Monday, 12 October 2020"
 	const cd = document.querySelector('#current-date');
-	let day = [
-		'Sunday',
-		'Monday',
-		'Tuesday',
-		'Wednesday',
-		'Thursday',
-		'Friday',
-		'Saturday'
-	];
-	let month = [
-		'January',
-		'February',
-		'March',
-		'April',
-		'May',
-		'June',
-		'July',
-		'August',
-		'September',
-		'October',
-		'Novemeber',
-		'December'
-	];
+	let day = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+	let month = ['January','February','March','April','May','June','July','August','September','October','Novemeber','December'];
 	cd.textContent = day[new Date().getDay()] + ', ' + new Date().getDate() + ' ' + month[new Date().getMonth()] + ' ' + new Date().getFullYear();
 
 	//Returns current year to the copyright in the footer
@@ -88,7 +68,7 @@ window.addEventListener('load', (event) => {
 		'Thursday',
 		'Friday',
 		'Saturday'
-	];
+    ];
 	var day_1 = document.querySelector(".day-0");
 	day_1.textContent = curDay[new Date().getDay()];
 

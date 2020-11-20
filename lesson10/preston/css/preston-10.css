@@ -168,15 +168,16 @@ hr {
 .five-day div img {
     display: block;
     margin: 35px auto 0 auto;
-    width: 70px;
+    width: 80px;
 }
 .five-day div p {
-    font-size: 1.3em;
+    margin-top: 0;
+    font-size: 1.4em;
 }
-.day1, .day2, .day3, .day4, .day5 {
+.five-day div {
     transition: transform 0.5s;
 }
-.day1:hover, .day2:hover, .day3:hover, .day4:hover, .day5:hover {
+.five-day div:hover {
     transform: scale(1.07, 1.07);
 }
 .article {
