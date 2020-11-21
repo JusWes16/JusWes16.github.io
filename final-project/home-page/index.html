@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Temple Inn - Home</title>
+    <link rel="shortcut icon" href="images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet"> 
+    <script src="js/home.js"></script>
 </head>
 <body>
-    
+    <header>
+        <a href="#"><img src="images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png" alt=""></a>
+        <a class="ham" href="#" onclick="menu()">&#9776</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Temples</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li>
+                    <button id="serv" href="#">Services  &#9662;</button>
+                    <div id="services-more">
+                        <a href="#">Receptions</a>
+                        <a href="#">Full-time Missionaries</a>
+                    </div>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+   
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/joe-cook-bntv2OJLpLk-unsplash.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="images/cedric-letsch-iQTbUuFwne8-unsplash.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="images/joshua-hoehne-iZur_RC4y-I-unsplash.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/michael-hart-1CGJXoKm34o-unsplash.jpg" style="width:100%">
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div id="reserve">
+            <h3>Make your reservation today!</h3>
+            <button href="#">Reserve</button>
+        </div>
+        <hr>
+        <section id="contact">
+            <h4>Contact info</h4>
+        </section>
+        <div id="temple-summery">
+            <h2>The Boston Temple</h2>
+            <hr>
+            <img src="images/IMG_4286.jpeg" alt="">
+            <div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            
+            <div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
