@@ -36,12 +36,17 @@ nav ul li a:hover {
     color: rgb(122, 103, 204);
     display: block;
 }
+.active {
+    color: rgb(122, 103, 204);
+}
 #serv {
     position: relative;
     display: inline-block;
     border: none;
     background-color: inherit;
     transition: color 0.3s;
+    height: 53px;
+    margin-top: -15px;
 }
 #serv:hover {
     color: rgb(122, 103, 204);
@@ -52,15 +57,28 @@ nav ul li a:hover {
     position: absolute;
     z-index: 10;
     list-style: none;
-    background-color: rgba(184, 184, 184, 0.678);
+    background-color: rgb(209, 209, 209);
+    text-align: left;
+    margin-left: 60px;
+    transition: color 0.3s;
 }
-#serv:hover #services-more {
-    display: block;
+#services-more a {
+    padding: 20px 5px;
+    transition: color 0.3s, background-color 0.7s;
+}
+#services-more a:hover {
+    background-color: rgb(160, 155, 155);
+    color: white;
+}
+#test:hover #services-more {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
+  z-index: -1;
 }
 .mySlides {
   display: none;
@@ -89,7 +107,7 @@ nav ul li a:hover {
 #reserve h3 {
     text-align: center;
     color: rgb(122, 103, 204);
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin-top: 60px;
 }
 #reserve button {
@@ -98,7 +116,7 @@ nav ul li a:hover {
     padding: 10px 175px;
     margin-bottom: 70px;
     margin-top: -10px;
-    background-color: rgba(173, 159, 192, 0.664);
+    background-color: rgba(196, 190, 204, 0.664);
     border: 1px solid rgb(122, 103, 204);
     box-shadow: none;
     font-size: 1.2em;
