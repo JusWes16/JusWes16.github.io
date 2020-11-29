@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thank you!</title>
+        <link rel="shortcut icon" href="images/logo.png">
+        <meta charset="utf-8">
+        <meta name="description" content="Preston Idaho Page">
+        <link rel='stylesheet' href='css/normalize.css'>
+        <link rel="stylesheet" href="css/stormcenter.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src='js/stormcenter.js'></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo.png" alt="website logo">
+            <div class="title">
+                <h1><b>Live Weather Report</b></h1>
+                <p><i>Where the news is never shady</i></p>
+            </div>
+            <a class="ham" href="#" onclick="menu()">&#9776</a>
+        </header>
+    
+        <nav id="navi">
+            <ul id="navigation">    
+                <li ><a class="links" href="https://juswes16.github.io/" onclick="menu()" onclick="current()">Home</a></li>
+                <li ><a class="links" href="https://juswes16.github.io/lesson10/preston/preston-10.html" onclick="menu()" onclick="current()">Preston</a></li>
+                <li ><a class="links" href="#" onclick="menu()" onclick="current()">Soda Springs</a></li>
+                <li ><a class="links" href="#" onclick="menu()" onclick="current()">Fish Haven</a></li>
+                <li ><a class="links active" href="https://juswes16.github.io/lesson8/stormcenter/stormcenter.html" onclick="menu()" onclick="current()">Storm Center</a></li>
+                <li ><a class="links" href="https://juswes16.github.io/lesson7/gallery-7.html" onclick="menu()" onclick="current()">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="thanks">
+                <h1>Thank you!</h1>
+                <hr>
+                <p>
+                    We appreciate your help! We will be sure to use your
+                    information to help others navigate the current weather conditions.
+                </p>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p id="email"><i class="material-icons" style="font-size: 0.9em;">&#xe554;</i> 123email@gmail.com</p>
+                <p id="phone"><i class="material-icons" style="font-size: 0.9em;">local_phone</i> 869-986-3512</p>
+                <p id="address"><i class="material-icons" style="font-size: 0.9em;">&#xe55f;</i> 123 Main St. Rexburg ID, 83440</p>
+            </div>    
+            <div id="social-links">
+                <a href="#"><img class="social-face" src="images/facebook.png"></a>
+                <a href="#"><img class="social-insta" src="images/instagram.png"></a>
+                <a href="#"><img class="social-twit" src="images/twitter.png"></a>
+                <a href="#"><img class="social-you" src="images/youtube.png"></a>
+            </div>
+            <div class="footer-bar">
+               <p class='legal'>&copy;<span id='copyrightyear'></span> | Weston A. Knowlton | Idaho | <a href="https://www.byui.edu/online">BYU-I Online Learning</a> </p>
+               <p class='highlight'><span id='current-date'></span></p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+        WebFont.load({google: {families: ['Montserrat']}});
+        </script>
+    </body>
+</html>

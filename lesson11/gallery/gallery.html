@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live Weather Report - Gallery</title>
+        <link rel="shortcut icon" href="images/logo.png">
+        <meta charset="utf-8">
+        <meta name="description" content="Preston Idaho Page">
+        <link rel='stylesheet' href='css/normalize.css'>
+        <link rel="stylesheet" href="css/gallery.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src='js/gallery.js'></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo.png" alt="website logo">
+            <div class="title">
+                <h1><b>Live Weather Report</b></h1>
+                <p><i>Where the news is never shady</i></p>
+            </div>
+            <a class="ham" href="#" onclick="menu()">&#9776</a>
+        </header>
+    
+        <nav id="navi">
+            <ul id="navigation">       
+                    <li ><a class="links" href="https://juswes16.github.io/lesson9/home/index.html" onclick="menu()">Home</a></li>
+                    <li ><a class="links" href="https://juswes16.github.io/lesson10/preston/preston-10.html" onclick="menu()">Preston</a></li>
+                    <li ><a class="links" href="#" onclick="menu()">Soda Springs</a></li>
+                    <li ><a class="links" href="#" onclick="menu()">Fish Haven</a></li>
+                    <li ><a class="links" href="https://juswes16.github.io/lesson8/stormcenter/stormcenter.html" onclick="menu()">Storm Center</a></li>
+                    <li ><a class="links active" href="https://juswes16.github.io/lesson7/gallery-7.html" onclick="menu()">Gallery</a></li>
+            </ul>    
+        </nav>
+
+        <h2 id="page-title" >Weather Gallery</h2>
+        <div id="gallery">
+            <div>
+                <img class="images" src="images/lightning-dark.jpg" loading="lazy" alt="Lightning">
+                <p>Lighting illumination the sky in Idaho</p>
+            </div>
+            <div>
+                <img class="images" src="images/man-snow.jpg" loading="lazy" alt="Man walking in the snow">
+                <p>Man walking in a snow storm</p>
+            </div>
+            <div>
+                <img class="images" src="images/snowy-field.jpg" loading="lazy" alt="Image of snow banks">
+                <p>Image of fresh snow fall on a field</p>
+            </div>
+            <div>
+                <img class="images" src="images/stormy-cars.jpg" loading="lazy" alt="Storm with weather vehicles">
+                <p>Weather vehicles chasing a storm</p>
+            </div>
+            <div>
+                <img class="images" src="images/sun-clouds.jpg" loading="lazy" alt="Sun rays shinning through clouds">
+                <p>Sun rays shinnng through the clouds</p>
+            </div>
+            <div>
+                <img class="images" src="images/sunny-blue.jpg" loading="lazy" alt="Sunny day with blue skies">
+                <p>Beautiful sunny day</p>
+            </div>
+            <div>
+                <img class="images" src="images/sunny-orange.jpg" loading="lazy" alt="Orange sunset">
+                <p>Beautiful orange sunset</p>
+            </div>
+            <div>
+                <img class="images" src="images/cloudy-field.jpg" loading="lazy" alt="Stormy clouds over a field">
+                <p>Storm clouds rolling over a field</p>
+            </div>
+            <div>
+                <img class="images" src="images/cloudy-town.jpg" loading="lazy" alt="Stormy clouds over a town">
+                <p>Storm clouds rolling over a local town</p>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+
+        <footer>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p id="email"><i class="material-icons" style="font-size: 0.9em;">&#xe554;</i> 123email@gmail.com</p>
+                <p id="phone"><i class="material-icons" style="font-size: 0.9em;">local_phone</i> 869-986-3512</p>
+                <p id="address"><i class="material-icons" style="font-size: 0.9em;">&#xe55f;</i> 123 Main St. Rexburg ID, 83440</p>
+                <a href="#"><img class="social-face" src="images/facebook.png"></a>
+                <a href="#"><img class="social-insta" src="images/instagram.png"></a>
+                <a href="#"><img class="social-twit" src="images/twitter.png"></a>
+                <a href="#"><img class="social-you" src="images/youtube.png"></a>
+            </div>
+           <section class="map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628260389!2d-111.9153445197946!3d42.099805311946824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1603470748003!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           </section>
+           <div class="footer-bar">
+               <p class='legal'>&copy;<span id='copyrightyear'></span> | Weston A. Knowlton | Idaho | <a href="https://www.byui.edu/online">BYU-I Online Learning</a> </p>
+               <p class='highlight'><span id='current-date'></span></p>
+           </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+        WebFont.load({google: {families: ['Montserrat']}});
+        </script>
+    </body>
+</html>

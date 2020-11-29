@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live Weather Report - Storm Center</title>
+        <link rel="shortcut icon" href="images/logo.png">
+        <meta charset="utf-8">
+        <meta name="description" content="Preston Idaho Page">
+        <link rel='stylesheet' href='css/normalize.css'>
+        <link rel="stylesheet" href="css/stormcenter.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src='js/stormcenter.js'></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo.png" alt="website logo">
+            <div class="title">
+                <h1><b>Live Weather Report</b></h1>
+                <p><i>Where the news is never shady</i></p>
+            </div>
+            <a class="ham" href="#" onclick="menu()">&#9776</a>
+        </header>
+    
+        <nav id="navi">
+            <ul id="navigation">    
+                <li ><a class="links" href="https://juswes16.github.io/lesson9/home/index.html" onclick="menu()">Home</a></li>
+                <li ><a class="links" href="https://juswes16.github.io/lesson10/preston/preston-10.html" onclick="menu()">Preston</a></li>
+                <li ><a class="links" href="#" onclick="menu()">Soda Springs</a></li>
+                <li ><a class="links" href="#" onclick="menu()">Fish Haven</a></li>
+                <li ><a class="links active" href="https://juswes16.github.io/lesson8/stormcenter/stormcenter.html" onclick="menu()">Storm Center</a></li>
+                <li ><a class="links" href="https://juswes16.github.io/lesson7/gallery-7.html" onclick="menu()">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <form method="GET" action="thanks.html" id="stormcenter">
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label>Full Name: <input type="text" name="name" pattern="[A-Z a-z]+" minlength="5" required></label>
+                <label>Email: <input type="email" name="email" placeholder="email@email.com"></label>
+                <label>Phone Number: <input type="tel" name="phone" required></label>
+                <label>Zip Code: <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Info</legend>
+                <label>Storm Date: <input type="date" name="storm-date"></label>
+                <label>Storm Type: 
+                    <input id="type" list="storm-type" name="type">
+                    <datalist id="storm-type">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane">Hurricane</option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label>Storm Severity: <span id="severity">5</span>
+                    <input type="range" id="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                </label>
+                <label>Region: 
+                    <select name="region">
+                        <option selected disabled>Select Region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+                <p id="danger">Are you in danger?</p>
+                    <label class="danger"><input  type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="danger"><input  type="radio" name="danger" value="no"> No</label>
+                    <label class="danger"><input  type="radio" name="danger" value="maybe"> Maybe</label>
+                <p id="comment">Additional Comments</p>
+                <label>
+                    <textarea id="comments" name="comments" rows="15" cols="62"></textarea>
+                </label> 
+            </fieldset>
+            <input class="button" form="stormcenter" type="submit" value="Report your conditions">
+        </form>
+    
+        <footer>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p id="email"><i class="material-icons" style="font-size: 0.9em;">&#xe554;</i> 123email@gmail.com</p>
+                <p id="phone"><i class="material-icons" style="font-size: 0.9em;">local_phone</i> 869-986-3512</p>
+                <p id="address"><i class="material-icons" style="font-size: 0.9em;">&#xe55f;</i> 123 Main St. Rexburg ID, 83440</p>
+            </div>    
+            <div id="social-links">
+                <a href="#"><img class="social-face" src="images/facebook.png"></a>
+                <a href="#"><img class="social-insta" src="images/instagram.png"></a>
+                <a href="#"><img class="social-twit" src="images/twitter.png"></a>
+                <a href="#"><img class="social-you" src="images/youtube.png"></a>
+            </div>
+            <div class="footer-bar">
+               <p class='legal'>&copy;<span id='copyrightyear'></span> | Weston A. Knowlton | Idaho | <a href="https://www.byui.edu/online">BYU-I Online Learning</a> </p>
+               <p class='highlight'><span id='current-date'></span></p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+        WebFont.load({google: {families: ['Montserrat']}});
+        </script>
+    </body>
+</html>

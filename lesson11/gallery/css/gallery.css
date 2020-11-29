@@ -1,0 +1,355 @@
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(236, 235, 235);
+}
+header {
+    display: grid;
+    grid-template-columns: 70px 1fr 80px;
+    grid-template-rows: 1fr;
+    background-color: rgb(10, 10, 170);
+    color: white;
+    height: 80px;
+}
+.logo {
+    max-width: 70px;
+    margin-top: 5px;
+}
+header h1 {
+    font-size: 1.1em;
+    margin: 25px 0 -13px 5px;
+}
+header p {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+nav {
+    display: none;
+    grid-column: 1/-1;
+    text-align: center;
+    background-color: rgba(0, 0, 70, 0.87);
+    backdrop-filter: blur(6px);
+    z-index: 2;
+}
+#navi {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#navigation {
+    padding-left: 0;
+    margin-top: 0;
+}
+#navigation li {
+    list-style-type: none;
+    padding: 0;
+}
+#navigation li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3em;
+    padding: 10px;
+    transition: color 0.3s linear;
+}
+#navigation li a:hover {
+    color: rgb(54, 89, 243);
+}
+.active {
+    background-color: rgba(54, 89, 243, 0.521);
+    border-radius: 30px;
+}
+.ham {
+    color: rgb(75, 105, 236);
+    font-size: 2em;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 21px;
+    margin-right: 20px;
+}
+.responsive {
+    display: block !important;
+}
+#page-title {
+    text-align: center;
+    color: rgb(54, 89, 243);
+}
+.images {
+    max-width: 100%;
+    display: block;
+}
+#gallery {
+    margin-top: 30px;
+}
+#gallery p {
+    display: none;
+}
+#gallery div {
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+#gallery div:hover {
+    box-shadow: 4px 4px 8px rgb(10, 10, 170);
+    opacity: 0.7;
+}
+.images{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+} 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+}
+footer {
+    background-color: rgb(10, 10, 170);
+    color: white;
+    margin-top: 30px;
+}
+footer h3 {
+    margin-top: 0;
+    padding: 10px 0 0 30px;
+    font-size: 1.2em;
+}
+footer p {
+    padding-left: 40px;
+    font-size: 0.9em;
+}
+.material-icons {
+    color: rgb(160, 11, 11);
+    margin-right: 5px;
+}
+.social-face, .social-insta, .social-twit, .social-you {
+    width: 37px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgb(1, 7, 43);
+}
+.social-face {
+    margin-left: 45px;
+}
+.social-insta, .social-twit, .social-you{
+    margin-left: 15px;
+}
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 300px;
+    width: 90%;
+    box-shadow: 8px 8px 8px rgb(1, 7, 43);
+    border-radius: 5px;
+}
+.footer-bar {
+    background-color: rgb(2, 2, 78);
+}
+.legal, .highlight {
+    text-align: center;
+    padding-left: 0;
+}
+.legal {
+    padding-top: 10px;
+}
+.legal a {
+    color: white;
+}
+.highlight {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+#current-date {
+    color: yellow;
+}
+
+@media only screen and (min-width: 50em) {
+    main {
+        max-width: 100%;
+        margin: 0 150px;
+    }
+    header {
+        height: 115px;
+    }
+    .logo {
+        margin-left: 150px;
+        max-width: 100px;
+    }
+    .title {
+        margin-left: 180px;
+        margin-top: 10px;
+    }
+    .title h1 {
+        font-size: 1.8em;
+    }
+    .ham {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    #navi {
+        border-radius: 0;
+    }
+    #navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 150px;
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation li a {
+        padding: 15px;
+    }
+    #page-title {
+        text-align: left;
+        margin-left: 12%;
+        font-size: 2.1em;
+    }
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    #gallery div {
+        max-width: 100%;
+        margin: 0;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+    }
+    .map {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    iframe {
+        margin: 20px 0;
+        margin-left: 140px;
+        height: 300px;
+        width: 500px;
+        box-shadow: 8px 8px 8px rgb(1, 7, 43);
+    }
+    .contact-info {
+        grid-column: 2/3;
+        margin-left: 50px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+    .footer-bar {
+        grid-column: 1/-1;
+        background-color: rgb(2, 2, 78);
+    }
+    .legal {
+        margin-top: 5px;
+        }
+}
+@media only screen and (min-width: 80em) {
+    header {
+        height: 150px;
+    }
+    .logo {
+        margin-left: 150px;
+        max-width: 140px;
+    }
+    .title {
+        margin-left: 220px;
+        margin-top: 30px;
+    }
+    .title h1 {
+        font-size: 1.8em;
+    }
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 30px;
+        grid-gap: 30px;
+    }
+    #gallery div {
+        box-shadow: 4px 4px 8px black;
+    }
+    #gallery p {
+        display: block;
+        text-align: center;
+        background-color: rgb(144, 161, 240);
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 0;
+        height: 30px;
+        padding-top: 10px;
+        border-radius: 0 0 5px 5px;
+    }
+    .images {
+        border-radius: 5px 5px 0 0;
+    }
+    iframe {
+        margin-left: 30%;
+    }
+    .contact-info {
+        margin-left: 20%;
+
+    }
+    
+}
