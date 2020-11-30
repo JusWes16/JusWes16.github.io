@@ -200,13 +200,18 @@ hr {
     line-height: 1.4em;
 }
 .article h3 {
-    /*color: rgb(10, 10, 114);*/
+    color: white;
     padding-bottom: 12px;
-    font-size: 1.3em;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 2px rgb(4, 4, 75);
+    font-weight: bold;
 }
 .article p {
     margin-right: 10px;
     padding-top: 10px;
+}
+.article p a {
+    color: white;
 }
 .article-img {
     display: block;
