@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Weather Report - Preston</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <meta charset="utf-8">
+    <meta name="description" content="Preston Idaho Page">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="stylesheet" href="css/soda-springs.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='js/soda-springs.js'></script>
+    <script src="js/windchill.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="website logo">
+        <div class="title">
+            <h1><b>Live Weather Report</b></h1>
+            <p><i>Where the news is never shady</i></p>
+        </div>
+        <a class="ham" href="#" onclick="menu()">&#9776</a>
+    </header>
+
+    <nav id="navi">
+        <ul id="navigation">    
+            <li ><a class="links" href="https://juswes16.github.io/lesson11/home/index.html" onclick="menu()">Home</a></li>
+            <li ><a class="links" href="https://juswes16.github.io/lesson11/preston/preston.html" onclick="menu()">Preston</a></li>
+            <li ><a class="links active" href="#" onclick="menu()">Soda Springs</a></li>
+            <li ><a class="links" href="#" onclick="menu()">Fish Haven</a></li>
+            <li ><a class="links" href="https://juswes16.github.io/lesson11/stormcenter/stormcenter.html" onclick="menu()">Storm Center</a></li>
+            <li ><a class="links" href="https://juswes16.github.io/lesson11/gallery/gallery.html" onclick="menu()">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1 class="fish-haven">Soda Springs, Idaho</h1>
+
+        <div class="banner">
+            <picture class="hero">
+                <source media="(max-width: 500px)" srcset="images/soda-springs-banner-500.jpg">
+                <source media="(max-width: 800px)" srcset="images/soda-springs-banner-800.jpg">
+                <source media="(max-width: 801px)" srcset="images/soda-springs-banner-1200.jpg">
+                <img src="images/soda-springs-banner-1200.jpg" alt="hero image">
+            </picture>
+            
+            <section class="summery">
+                <h2>Weather Summery</h2>
+                <hr>
+                <p><b>Currently:</b> <span id="current"></span></p>
+                <p><b>Temperature:</b> <span id="temp"></span>&#8457;</p>
+                <p><b>Wind Chill:</b> <span id="wind-chill"></span><span id="farin">&#8457;</span></p>
+                <p><b>Humidity:</b> <span id="humid"></span></p>
+                <p><b>Wind Speed:</b> <span id="wind-speed"></span> MPH</p>
+            </section>
+        </div>
+
+        <h2 id="events-title">Local Events</h2>
+        <div id="town-events"></div>
+
+        <section class="five">
+            <h3>Five Day Forcast</h3>
+            <div class="five-day"></div>
+        </section>
+
+        <article class="article">
+            <h3>Picturing history: Soda Springs, Idaho</h3>
+            <img class="article-img" src="images/soda-article.jpg" alt="article image">
+            <p>
+                Located in Caribou County of southeastern Idaho, the little town of Soda Springs 
+                was an unusual but welcome stop on the Oregon Trail. Travelers enjoyed bathing 
+                in the natural mineral springs that bubble out of the earth there. The site 
+                became a landmark along the trail and a first destination to travelers in general.<br>
+                <br>
+                This interpretive panel is near the site of Morristown, Idaho, a settlement established 
+                by Col. Patrick Connor that now lies under the waters of a reservoir. | Kenneth Mays<br>
+                <br>
+                A state of Idaho interpretive panel near the town notes that Col. Patrick E. Connor 
+                (from Fort Douglas, Utah) established a settlement called Morristown, and adjacent 
+                army post near the mineral springs in 1863. In subsequent years, the population began 
+                to dwindle. In 1870, LDS Church President Brigham Young established what is present-day 
+                Soda Springs just east of Connor’s location.
+                <a href="https://www.deseret.com/2017/8/30/20618498/picturing-history-soda-springs-idaho#this-view-shows-the-captive-geyser-at-soda-springs-idaho-a-town-established-by-president-brigham-young" target="_blank">To read the rest of this article click here.</a>
+            </p>
+            <br class="clear">
+        </article>
+
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p id="email"><i class="material-icons" style="font-size: 0.9em;">&#xe554;</i> 123email@gmail.com</p>
+            <p id="phone"><i class="material-icons" style="font-size: 0.9em;">local_phone</i> 869-986-3512</p>
+            <p id="address"><i class="material-icons" style="font-size: 0.9em;">&#xe55f;</i> 123 Main St. Rexburg ID, 83440</p>
+            <a href="https://facebook.com" target='_blank'><img class="social-face" src="images/facebook.png" ></a>
+            <a href="https://instagram.com" target='_blank'><img class="social-insta" src="images/instagram.png" ></a>
+            <a href="https://twitter.com" target='_blank'><img class="social-twit" src="images/twitter.png" ></a>
+            <a href="https://youtube.com" target='_blank'><img class="social-you" src="images/youtube.png" ></a>
+        </div>
+       <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.966899126324!2d-111.60628165867286!3d42.66144307567727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1606781465224!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+       </section>
+       <div class="footer-bar">
+           <p class='legal'>&copy;<span id='copyrightyear'></span> | Weston A. Knowlton | Idaho | <a href="https://www.byui.edu/online">BYU-I Online Learning</a> </p>
+           <p class='highlight'><span id='current-date'></span></p>
+           <p class='openweathermap'>All of the weather data was provided by OpenWeatherMap. Check them out <a href="https://openweathermap.org/" target='_blank'>here</a></p>
+       </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({google: {families: ['Montserrat']}});
+    </script>
+</body>
+</html>

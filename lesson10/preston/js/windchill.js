@@ -1,5 +1,5 @@
 window.addEventListener('load', (event)=>{
-    var temp = document.getElementsByClassName("temp")[0].innerHTML;
+    var temp = document.getElementById("temp").innerHTML;
 	var wind = document.getElementById("wind-speed").innerHTML;
 	var farin = document.getElementById("farin")
 	var windChill = document.getElementById("wind-chill");

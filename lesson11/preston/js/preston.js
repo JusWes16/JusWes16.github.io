@@ -1,6 +1,6 @@
-const URL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=49dff8e39e45697704945111bde85895";
+const URL1 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=49dff8e39e45697704945111bde85895";
 
-fetch(URL)
+fetch(URL1)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
@@ -34,31 +34,7 @@ fetch(URL)
 
             x += 1;
         }
-    }    
-});
-
-window.addEventListener('load', (event) => {
-
-	//Returns the current date at the bottom in the format "Monday, 12 October 2020"
-	const cd = document.querySelector('#current-date');
-	let day = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-	let month = ['January','February','March','April','May','June','July','August','September','October','Novemeber','December'];
-	cd.textContent = day[new Date().getDay()] + ', ' + new Date().getDate() + ' ' + month[new Date().getMonth()] + ' ' + new Date().getFullYear();
-
-	//Returns current year to the copyright in the footer
-	const cry = document.querySelector('#copyrightyear');
-	cry.textContent = new Date().getFullYear();
-
-	//Notification bar that only apears on fridays
-	var nb = document.querySelector('.notification');
-	var d = new Date().getDay();
-
-	if (d == 5) {
-		nb.style.display = 'block';
-	} else {
-		nb.style.display = 'none';
 	}
-
 	//Enters the next 5 days in the five day forcast
 	var curDay = [
 		'Sunday',
@@ -103,7 +79,65 @@ window.addEventListener('load', (event) => {
 	}
 });
 
+window.addEventListener('load', (event) => {
+
+	//Returns the current date at the bottom in the format "Monday, 12 October 2020"
+	const cd = document.querySelector('#current-date');
+	let day = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+	let month = ['January','February','March','April','May','June','July','August','September','October','Novemeber','December'];
+	cd.textContent = day[new Date().getDay()] + ', ' + new Date().getDate() + ' ' + month[new Date().getMonth()] + ' ' + new Date().getFullYear();
+
+	//Returns current year to the copyright in the footer
+	const cry = document.querySelector('#copyrightyear');
+	cry.textContent = new Date().getFullYear();
+
+	//Notification bar that only apears on fridays
+	var nb = document.querySelector('.notification');
+	var d = new Date().getDay();
+
+	if (d == 5) {
+		nb.style.display = 'block';
+	} else {
+		nb.style.display = 'none';
+	}	
+});
+
 //Function to toggle hamburger button
 function menu() {
 	document.getElementById("navi").classList.toggle("responsive");
 }
+
+const URL2 = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(URL2)
+.then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);
+	const towns = jsonObject['towns'];
+	
+	for(i = 0; i < towns.length; i++){
+
+		if(towns[i].name == 'Preston'){
+		  let events = document.createElement('section');
+		  let event1 = document.createElement('div')
+		  let event2 = document.createElement('div')
+		  let event3 = document.createElement('div')
+		  let event4 = document.createElement('div')
+
+		  event1.textContent = towns[i].events[0];
+		  event2.textContent = towns[i].events[1];
+		  event3.textContent = towns[i].events[2];
+		  event4.textContent = towns[i].events[3];
+
+		  events.appendChild(event1);
+		  events.appendChild(event2);
+		  events.appendChild(event3);
+		  events.appendChild(event4);
+
+		  document.getElementById('town-events').appendChild(events);
+		}
+	}
+
+});
