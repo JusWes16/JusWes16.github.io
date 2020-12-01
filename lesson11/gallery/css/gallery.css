@@ -167,38 +167,31 @@ footer {
     margin-top: 30px;
 }
 footer h3 {
-    margin-top: 0;
-    padding: 10px 0 0 30px;
+    padding-top: 10px;
     font-size: 1.2em;
+    text-align: center;
 }
 footer p {
-    padding-left: 40px;
     font-size: 0.9em;
+    text-align: center;
 }
 .material-icons {
     color: rgb(160, 11, 11);
     margin-right: 5px;
 }
 .social-face, .social-insta, .social-twit, .social-you {
+    display: block;
+    margin: 0 auto;
     width: 37px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 5px;
     box-shadow: 1px 1px 8px rgb(1, 7, 43);
 }
-.social-face {
-    margin-left: 45px;
-}
-.social-insta, .social-twit, .social-you{
-    margin-left: 15px;
-}
-iframe {
-    display: block;
+#social-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
-    margin-top: 10px;
-    height: 300px;
-    width: 90%;
-    box-shadow: 8px 8px 8px rgb(1, 7, 43);
-    border-radius: 5px;
+    width: 250px;
 }
 .footer-bar {
     background-color: rgb(2, 2, 78);
@@ -278,34 +271,11 @@ iframe {
         margin: 0;
     }
     footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         margin-top: 30px;
-    }
-    .map {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    iframe {
-        margin: 20px 0;
-        margin-left: 140px;
-        height: 300px;
-        width: 500px;
-        box-shadow: 8px 8px 8px rgb(1, 7, 43);
-    }
-    .contact-info {
-        grid-column: 2/3;
-        margin-left: 50px;
-        margin-top: 60px;
-        margin-bottom: 10px;
     }
     .footer-bar {
         grid-column: 1/-1;
-        background-color: rgb(2, 2, 78);
     }
-    .legal {
-        margin-top: 5px;
-        }
 }
 @media only screen and (min-width: 80em) {
     header {
@@ -344,12 +314,4 @@ iframe {
     .images {
         border-radius: 5px 5px 0 0;
     }
-    iframe {
-        margin-left: 30%;
-    }
-    .contact-info {
-        margin-left: 20%;
-
-    }
-    
 }

@@ -86,6 +86,9 @@ nav {
 
 /*-------------------------MAIN--------------------------*/
 
+main h1 {
+    text-align: center;
+}
 #towns section {
     background-color: rgb(159, 183, 214);
     text-align: center;
