@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Temple Inn - Home</title>
+    <title>The Temple Inn | Home</title>
     <link rel="shortcut icon" href="images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     <script src="js/home.js"></script>
 </head>
 <body>
     <header>
         <a href="#"><img src="images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png" alt=""></a>
         <a class="ham" href="#" onclick="menu()">&#9776</a>
-        <nav>
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">Temples</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li id="test">
-                    <button id="serv" href="#">Services  &#9662;</button>
-                    <div id="services-more">
-                        <a href="#">Receptions</a>
-                        <a href="#">Full-time Missionaries</a>
-                    </div>
-                </li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-        
     </header>
    
+    <nav id="navi">
+        <ul>
+            <li><a class="active" href="#" onclick="menu()">Home</a></li>
+            <li><a href="#" onclick="menu()">Temples</a></li>
+            <li><a href="#" onclick="menu()">Reservations</a></li>
+            <li id="test">
+                <button id="serv" href="#" onclick="service()">Services  &#9662;</button>
+                <div id="services-more">
+                    <a href="#" class="rec" onclick="service()">Receptions</a>
+                    <a href="#" class="full" onclick="service()">Full-time Missionaries</a>
+                </div>
+            </li>
+            <li><a href="#" onclick="menu()">Contact Us</a></li>
+        </ul>
+    </nav>
 
     <main>
         <div class="slideshow-container">
@@ -57,42 +57,66 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+
+        <div id="inn-name">
+            <h1 id="name">Welcome to The Temple Inn & Suites</h1>
+            <img id="logo" src="images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png" alt="company logo">
+        </div>
+        
         <div id="reserve">
             <h3>Make your reservation today!</h3>
-            <button href="#">Reserve</button>
+            <button href="#">Reserve!</button>
         </div>
+        
         <hr>
-        <section id="contact">
-            <h4>Contact info</h4>
-        </section>
+
         <div id="temple-summery">
             <h2>The Boston Temple</h2>
             <hr>
             <img src="images/IMG_4286.jpeg" alt="">
-            <div>
-                <h3>Lorem ipsum dolor</h3>
+            <div id="temple-text">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            
-            <div>
-                <h3>Lorem ipsum dolor</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    This is the Boston Massachusetts Temple. The Boston Temple 
+                    was the 100th operating temple of The Church of Jesus Christ of 
+                    Latter Day Saints. <br>
+                    <br>
+                    This temple was the first temple to be built 
+                    in New England and Massechusetts. The Boston Temple is one of the many
+                    temples where The Temple Inn & Suites is proud to be in operation. 
+                    To learn more about the Boston Temple as well as other temples <a href="#">click here.</a>
                 </p>
             </div>
         </div>
+        <hr>
+        <section id="contact">
+            <h4>Contact info</h4>
+            <p><i><b>Phone Number:</b></i> <a id="tel" href="tel:555-555-5555">555-555-5555</a></p>
+            <p><i><b>Email Address:</b></i> <a id="mail" href="mailto:thetempleinn@temple.com">thetempleinn@temple.com</a></p>
+            <button>Contact Us Today!</button>
+        </section>
     </main>
 
     <footer>
-        
+        <div class="foot-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Temples</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p id="phone"><i class="material-icons" style="font-size: 0.9em;">local_phone</i> 869-986-3512</p>
+            <p id="email"><i class="material-icons" style="font-size: 0.9em;">&#xe554;</i> thetempleinn@temple.com</p>
+            <p id="address"><i class="material-icons" style="font-size: 0.9em;">&#xe55f;</i> <i>4800 Montgomery Ln #300, Bethesda, MD 20814</i></p>
+            <div id="socials">
+                <a href="https://facebook.com" target='_blank'><img class="social-face" src="images/facebook.png" ></a>
+                <a href="https://instagram.com" target='_blank'><img class="social-insta" src="images/instagram.png" ></a>
+                <a href="https://twitter.com" target='_blank'><img class="social-twit" src="images/twitter.png" ></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
