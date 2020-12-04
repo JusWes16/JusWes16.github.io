@@ -1,0 +1,92 @@
+{
+    "temples": [
+        {
+            "name": "Boston Massachusetts",
+            "address": "100 Hinckley Way Belmont, MA  02478-2135 United States",
+            "phone": "617-993-9993",
+            "email": "westonk@byui.edu",
+            "services": [
+                "Clothing rental avalible",
+                "NO cafeteria food avalible",
+                "NO patron housing avalible",
+                "Distribution center nearby"
+            ],
+            "history": "The Boston Temple was announced 30 September 1995. Five years later is was dedicated as the 100th operating temple of the church on 1 October 2000 by Gordon B. Hinkley.",
+            "ordinance": [
+
+            ],
+            "session": [
+
+            ],
+            "closure":[
+
+            ]
+        },
+        {
+            "name": "Oakland California",
+            "address": "4770 Lincoln Ave Oakland CA 94602-2535 United States",
+            "phone": "510-531-3200",
+            "email": "westonk@byui.edu",
+            "services": [
+                "Clothing rental avalible",
+                "NO cafeteria food avalible",
+                "NO patron housing avalible",
+                "Distribution center nearby"
+            ],
+            "history": "The Oakland Temple was announced 23 January 1961. The temple was deidcated just three years later on 17 November 1964 by David O. McKay. The Oakland temple was the 13th operation temple of the church",
+            "ordinance": [
+
+            ],
+            "session": [
+
+            ],
+            "closure": [
+
+            ]
+        },
+        {
+            "name": "Memphis Tennessee",
+            "address": "4199 Kirby-Whitten Pkwy Bartlett TN 38135-9245 United States",
+            "phone": "901-379-0202",
+            "email": "westonk@byui.edu",
+            "services": [
+                "NO clothing rental avalible",
+                "NO cafeteria food avalible",
+                "NO patron housing avalible",
+                "NO distribution center nearby"
+            ],
+            "history": "The Memphis Temple was announced 17 September 1998. It was dedicated on 23 April 2000 by james E. Faust making it the 80th operating temple of the church.",
+            "ordinance": [
+
+            ],
+            "session": [
+
+            ],
+            "closure": [
+
+            ]
+        },
+        {
+            "name": "Draper Utah",
+            "address": "14065 Canyon Vista Ln Draper UT 84020-5626 United States",
+            "phone": "801-576-4240",
+            "email": "westonk@byui.edu",
+            "services": [
+                "Clothing rental avalible",
+                "NO cafeteria food avalible",
+                "NO patron housing avalible",
+                "Distribution center nearby"
+            ],
+            "history": "The Draper Utah Temple wwas announced 2 October 2004. It was dedicated on 22 March 2009 by Thomas S. Monson making it the 129th operating temple of the church.",
+            "ordinance": [
+
+            ],
+            "session": [
+
+            ],
+            "closure": [
+                
+            ]
+        }
+    ]
+}

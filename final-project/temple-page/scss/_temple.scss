@@ -1,0 +1,205 @@
+/*------------------HEADER------------------*/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    background-color: rgb(219, 218, 218);
+    height: 60px;
+    img {
+        max-width: 90px;
+        margin-top: -15px;
+        margin-left: 20px;
+    }
+}
+.ham {
+    display: block;
+    text-decoration: none;
+    color: rgb(122, 103, 204);
+    font-size: 1.9em;
+    grid-column: -1;
+    margin: 13px 20px 0 0;
+}
+.responsive {
+    display: block;
+}
+nav {
+    display: none;
+    z-index: 5;
+    ul {
+        background-color: rgb(160, 160, 160);
+        padding: 0;
+        margin: 0;
+    }
+    ul li {
+        text-align: center;
+        list-style: none;
+        padding: 5px;
+        font-size: 1.4em;
+    }
+    ul li a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.4s;
+    }
+    ul li a:hover {
+        color: rgb(122, 103, 204);
+        text-decoration: underline;
+    }
+}
+.active {
+    color: rgb(122, 103, 204);
+    text-decoration: underline;
+}
+#serv {
+    border: none;
+    background-color: inherit;
+    color: white;
+    transition: color 0.4s;
+}
+#serv:hover {
+    color: rgb(122, 103, 204);
+    cursor: pointer;
+    text-decoration: underline;
+}
+#services-more {
+    display: none;
+    a {
+        padding: 5px;
+        transition: color 0.4s;
+    }
+    a:hover {
+        color: rgb(64, 54, 107);
+    }
+}
+.more {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+/*---------------FOOTER---------------*/
+footer {
+    background-color: rgba(184, 184, 184, 0.678);
+}
+.foot-nav {
+    ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    padding-top: 20px;
+    }
+    ul li {
+        list-style: none;
+        padding: 5px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    ul li a {
+        color: black;
+        transition: color 0.4s;
+    }
+    ul li a:hover {
+        color: rgb(122, 103, 204);
+    }
+}
+.contact-info {
+    grid-column: -1;
+    h3 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    img {
+        display: block;
+        width: 40px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px rgb(1, 7, 43);
+        margin: 0 auto;
+    }
+} 
+.material-icons {
+    color: rgb(122, 103, 204);
+}
+#socials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+    
+
+    /*----------------FOOTER---------------*/
+    .foot-nav ul {
+        grid-template-columns: repeat(5, 1fr);
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /*------------------HEADER------------------*/
+    .ham {
+        display: none;
+    }
+    header {
+        position: relative;
+    }
+    nav {
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 10%;
+        ul {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background-color: inherit;
+        }
+        ul li {
+            padding: 0 30px;
+            font-size: 1.2em;
+        }
+        ul li a {
+            color: black;
+        }
+    }
+    #serv {
+        color: black;
+        position: relative;
+    }
+    #services-more {
+        position: absolute;
+        top: 20px;
+        left: 505px;
+        background-color: rgb(219, 218, 218);
+        padding-top: 10px;
+        width: 200px;
+        a:hover {
+            color: rgb(122, 103, 204);
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    /*------------------HEADER------------------*/
+    header img {
+        margin-left: 50px;
+    }
+    nav ul li {
+        padding: 0 60px;
+        font-size: 1.2em;
+    }
+    #services-more {
+        position: absolute;
+        top: 20px;
+        left: 715px;
+        background-color: rgb(219, 218, 218);
+        padding-top: 10px;
+        width: 200px;
+    }
+}
