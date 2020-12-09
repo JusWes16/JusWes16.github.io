@@ -477,3 +477,237 @@ footer {
     background-color: #dbdada;
     padding-top: 10px;
     width: 200px; } }
+/*------------------HOME PHOTOS------------------*/
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto; }
+
+.mySlides {
+  display: none; }
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/*-----------------HOME BODY---------------------*/
+#inn-name {
+  margin: 0 auto; }
+
+#name {
+  text-align: center;
+  max-width: 90%;
+  margin: 30px auto 20px auto;
+  color: #8373c9;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 0.5px black; }
+
+#logo {
+  display: block;
+  margin: -60px auto -40px auto; }
+
+#reserve h3 {
+  text-align: center;
+  color: #8373c9;
+  font-size: 1.8em;
+  margin-top: 60px;
+  text-shadow: 1px 1px 0.5px black; }
+#reserve button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 125px;
+  margin-bottom: 70px;
+  margin-top: -10px;
+  background-color: rgba(196, 190, 204, 0.664);
+  border: 1px solid #7a67cc;
+  box-shadow: none;
+  font-size: 1.5em;
+  transition: transform 0.7s, box-shadow 0.7s, background-color 1s;
+  border-radius: 25px; }
+#reserve button:hover {
+  background-color: #988bce;
+  color: white;
+  transform: scale(1.03);
+  border-color: black;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer; }
+
+#temple-summery {
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.5480391986) 0%, rgba(166, 149, 200, 0.606862728) 56%, #554e5a 100%);
+  margin: 80px 0 60px 0; }
+  #temple-summery h2 {
+    text-align: center;
+    font-size: 2.1em;
+    color: #ebebeb;
+    text-shadow: 2px 2px 2px black;
+    padding-top: 20px; }
+  #temple-summery hr {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -15px; }
+  #temple-summery img {
+    max-width: 75%;
+    max-height: 500px;
+    display: block;
+    margin: 30px auto 40px auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px black; }
+  #temple-summery div {
+    margin: 0 20px; }
+  #temple-summery div h3 {
+    text-align: center;
+    font-size: 1.5em; }
+  #temple-summery div p {
+    line-height: 1.5em;
+    font-size: 1.1em;
+    padding-bottom: 30px;
+    font-weight: bold; }
+  #temple-summery div p a {
+    color: black; }
+
+hr {
+  margin: 0 20px; }
+
+#contact h4 {
+  text-align: center;
+  color: #8373c9;
+  font-size: 1.8em;
+  text-shadow: 1px 1px 0.5px black;
+  margin-bottom: 25px; }
+#contact p {
+  text-align: center; }
+#contact p a {
+  color: black; }
+#contact button {
+  display: block;
+  margin: 40px auto 60px auto;
+  background-color: rgba(196, 190, 204, 0.664);
+  border: 1px solid #7a67cc;
+  box-shadow: none;
+  font-size: 1.4em;
+  padding: 5px 50px;
+  transition: transform 0.7s, box-shadow 0.7s, background-color 1s;
+  border-radius: 25px; }
+#contact button:hover {
+  background-color: #988bce;
+  color: white;
+  transform: scale(1.03);
+  border-color: black;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer; }
+
+#tel {
+  text-decoration: none; }
+
+@media only screen and (min-width: 700px) {
+  #logo {
+    margin-top: -40px; }
+
+  #reserve button {
+    padding: 10px 175px; }
+
+  #temple-summery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 700px; }
+    #temple-summery img {
+      max-height: 450px;
+      margin-top: 15px; }
+    #temple-summery h2 {
+      grid-column: 1/-1; }
+    #temple-summery hr {
+      grid-column: 1/-1;
+      grid-row: 2; }
+
+  #temple-text {
+    padding-top: 25px;
+    padding-right: 80px; } }
+@media only screen and (min-width: 1000px) {
+  /*----------HOME BODY-----------*/
+  #name {
+    font-size: 2.4em;
+    margin-top: 40px; }
+
+  #reserve h3 {
+    font-size: 2.2em; }
+  #reserve button {
+    padding: 10px 250px; }
+
+  #temple-summery h2 {
+    font-size: 2.2em; }
+  #temple-summery img {
+    margin: 15px 50px 40px 0;
+    justify-self: end; }
+
+  #temple-text {
+    max-width: 280px;
+    padding-top: 30px;
+    padding-left: 50px; }
+
+  #contact h4 {
+    font-size: 2em; }
+  #contact p {
+    font-size: 1.2em; } }
+#temples-content h1 {
+  text-align: center;
+  color: #7a67cc;
+  text-shadow: 1px 1px 0.5px black;
+  font-size: 2.2em;
+  margin-top: 30px; }
+
+#temples {
+  display: none; }
+
+@media only screen and (min-width: 700px) {
+  #temples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 40px; }
+    #temples a {
+      text-align: center;
+      text-decoration: none;
+      display: grid;
+      box-shadow: 2px 2px 4px black;
+      border: 1px solid #7a67cc;
+      transition: transform 0.7s; }
+      #temples a img {
+        max-width: 100%;
+        grid-row: 1/-1;
+        grid-column: 1/-1;
+        display: block; }
+      #temples a h2 {
+        grid-row: 1;
+        grid-column: 1/-1;
+        z-index: 5;
+        font-size: 1.8em;
+        color: #7a67cc;
+        text-shadow: 1px 1px 0.5px black; }
+    #temples a:hover {
+      transform: scale(1.03); } }
+@media only screen and (min-width: 900px) {
+  #temples {
+    grid-template-columns: repeat(3, 1fr); } }
+@media only screen and (min-width: 1200px) {
+  #temples {
+    grid-template-columns: repeat(4, 1fr); } }

@@ -13,14 +13,29 @@
             ],
             "history": "The Boston Temple was announced 30 September 1995. Five years later is was dedicated as the 100th operating temple of the church on 1 October 2000 by Gordon B. Hinkley.",
             "ordinance": [
-
+                "Baptisms: 7:00am - 8:00pm new session every hour",
+                "Initiatories: 7:00am - 8:00pm new session every hour",
+                "Sealings: 8:00am - 7:00pm new sessions every 30 minutes",
+                "Endowments: 8:00am - 8:00pm new sessions every 2 hours"
             ],
             "session": [
-
+                "8:00am - 10:00am",
+                "10:00am - 12:00pm",
+                "12:00pm - 2:00pm",
+                "2:00pm - 4:00pm",
+                "4:00pm - 6:00pm",
+                "6:00pm - 8:00pm"
             ],
             "closure":[
-
-            ]
+                "New Years Day",
+                "Memorial Day",
+                "Independance Day",
+                "Labor Day",
+                "Thanksgiving Day",
+                "Christmas Eve",
+                "Christmas Day",
+                "Temple Shutdown: January 4th - January 18th"
+            ] 
         },
         {
             "name": "Oakland California",

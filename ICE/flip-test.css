@@ -1,0 +1,3 @@
+.flip-card-inner:hover {
+  transform: rotateY(180deg);
+}

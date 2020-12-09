@@ -131,17 +131,13 @@ footer {
     margin: 0 auto;
     padding-bottom: 20px;
 }
-
 @media only screen and (min-width: 700px) {
-    
-
     /*----------------FOOTER---------------*/
     .foot-nav ul {
         grid-template-columns: repeat(5, 1fr);
         padding-bottom: 10px;
     }
 }
-
 @media only screen and (min-width: 1000px) {
     /*------------------HEADER------------------*/
     .ham {
@@ -184,7 +180,6 @@ footer {
         }
     }
 }
-
 @media only screen and (min-width: 1300px){
     /*------------------HEADER------------------*/
     header img {
