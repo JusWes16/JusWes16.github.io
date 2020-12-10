@@ -23,7 +23,7 @@ fetch(URL1)
       let phone =document.createElement("p");
       let email = document.createElement("p");
       let services = document.createElement("ul");
-      let service1 = document.createElement("li");
+      let service = document.createElement("li");
       let service2 = document.createElement("li");
       let service3 = document.createElement("li");
       let service4 = document.createElement("li");
@@ -39,14 +39,19 @@ fetch(URL1)
       let close = document.createElement("li");
 
       name.textContent = temples[i].name;
-      address.textContent = temples[i].address;
-      phone.textContent = temples[i].phone;
-      email.textContent = temples[i].email;
+      address.textContent = "Address: " + temples[i].address;
+      phone.textContent = "Phone Number: " + temples[i].phone;
+      email.textContent = "Email: " + temples[i].email;
 
-      service1.textContent = temples[i].services[0];
-      service2.textContent = temples[i].services[1];
-      service3.textContent = temples[i].services[2];
-      service4.textContent = temples[i].services[3];
+      for(x = 0; x < temples[i].services.length; x++){
+        service.textContent = temples[i].services[x];
+        services.appendChild(service);
+      }
+
+      //service1.textContent = temples[i].services[0];
+      //service2.textContent = temples[i].services[1];
+      //service3.textContent = temples[i].services[2];
+      //service4.textContent = temples[i].services[3];
 
       history.textContent = temples[i].history;
 
@@ -55,10 +60,10 @@ fetch(URL1)
       time_o3.textContent = temples[i].ordinance[2];
       time_o4.textContent = temples[i].ordinance[3];
 
-      services.appendChild(service1);
-      services.appendChild(service2);
-      services.appendChild(service3);
-      services.appendChild(service4);
+      //services.appendChild(service1);
+      //services.appendChild(service2);
+      //services.appendChild(service3);
+      //services.appendChild(service4);
 
       ordinance.appendChild(time_o1);
       ordinance.appendChild(time_o2);

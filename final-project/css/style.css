@@ -711,3 +711,39 @@ hr {
 @media only screen and (min-width: 1200px) {
   #temples {
     grid-template-columns: repeat(4, 1fr); } }
+h1 {
+  text-align: center;
+  color: #7a67cc;
+  text-shadow: 1px 1px 0.5px black; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #7a67cc;
+  margin: 20px;
+  color: white;
+  border: 1px solid black;
+  border-left: 8px solid #3a248b;
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding-top: 0; }
+
+label {
+  margin-top: 10px; }
+
+input, select {
+  width: 96%;
+  margin-top: 8px;
+  padding: 5px;
+  display: block; }
+
+select {
+  width: 99%;
+  cursor: pointer; }
+
+textarea {
+  display: block;
+  max-width: 97%;
+  margin: 0 auto; }
