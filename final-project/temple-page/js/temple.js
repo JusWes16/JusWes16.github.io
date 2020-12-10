@@ -44,6 +44,7 @@ fetch(URL1)
       email.textContent = "Email: " + temples[i].email;
 
       for(x = 0; x < temples[i].services.length; x++){
+        let service = document.createElement("li");
         service.textContent = temples[i].services[x];
         services.appendChild(service);
       }

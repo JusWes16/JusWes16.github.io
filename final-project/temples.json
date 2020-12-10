@@ -34,7 +34,9 @@
                 "Thanksgiving Day",
                 "Christmas Eve",
                 "Christmas Day",
-                "Temple Shutdown: January 4th - January 18th"
+                "General Conference Weekend (April and October)",
+                "Temple Shutdown: January 4th - January 18th",
+                "Temple Shutdown: June 4th - June 18th"
             ] 
         },
         {
@@ -50,13 +52,30 @@
             ],
             "history": "The Oakland Temple was announced 23 January 1961. The temple was deidcated just three years later on 17 November 1964 by David O. McKay. The Oakland temple was the 13th operation temple of the church",
             "ordinance": [
-
+                "Baptisms: 8:00am - 8:00pm new session every hour",
+                "Initiatories: 7:00am - 9:00pm new session every hour",
+                "Sealings: 6:00am - 7:00pm new sessions every 30 minutes",
+                "Endowments: 7:00am - 7:00pm new sessions every 2 hours"
             ],
             "session": [
-
+                "7:00am - 9:00am",
+                "9:00am - 11:00am",
+                "11:00am - 1:00pm",
+                "1:00pm - 3:00pm",
+                "3:00pm - 5:00pm",
+                "5:00pm - 7:00pm"
             ],
             "closure": [
-
+                "New Years Day",
+                "Memorial Day",
+                "Independance Day",
+                "Labor Day",
+                "Thanksgiving Day",
+                "Christmas Eve",
+                "Christmas Day",
+                "General Conference Weekend (April and October)",
+                "Temple Shutdown: January 10th - January 24th",
+                "Temple Shutdown: June 12th - June 26th"
             ]
         },
         {
@@ -72,13 +91,31 @@
             ],
             "history": "The Memphis Temple was announced 17 September 1998. It was dedicated on 23 April 2000 by james E. Faust making it the 80th operating temple of the church.",
             "ordinance": [
-
+                "Baptisms: 6:00am - 9:00pm new session every hour",
+                "Initiatories: 7:00am - 8:00pm new session every hour",
+                "Sealings: 8:00am - 9:00pm new sessions every 30 minutes",
+                "Endowments: 6:00am - 8:00pm new sessions every 2 hours"
             ],
             "session": [
-
+                "6:00am - 8:00am",
+                "8:00am - 10:00am",
+                "10:00am - 12:00pm",
+                "12:00pm - 2:00pm",
+                "2:00pm - 4:00pm",
+                "4:00pm - 6:00pm",
+                "6:00pm - 8:00pm"
             ],
             "closure": [
-
+                "New Years Day",
+                "Memorial Day",
+                "Independance Day",
+                "Labor Day",
+                "Thanksgiving Day",
+                "Christmas Eve",
+                "Christmas Day",
+                "General Conference Weekend (April and October)",
+                "Temple Shutdown: October 8th - October 22th",
+                "Temple Shutdown: April 4th - April 18th"
             ]
         },
         {
@@ -94,13 +131,30 @@
             ],
             "history": "The Draper Utah Temple wwas announced 2 October 2004. It was dedicated on 22 March 2009 by Thomas S. Monson making it the 129th operating temple of the church.",
             "ordinance": [
-
+                "Baptisms: 7:00am - 9:00pm new session every hour",
+                "Initiatories: 6:00am - 8:00pm new session every hour",
+                "Sealings: 8:00am - 8:00pm new sessions every 30 minutes",
+                "Endowments: 8:00am - 8:00pm new sessions every 2 hours"
             ],
             "session": [
-
+                "8:00am - 10:00am",
+                "10:00am - 12:00pm",
+                "12:00pm - 2:00pm",
+                "2:00pm - 4:00pm",
+                "4:00pm - 6:00pm",
+                "6:00pm - 8:00pm"
             ],
             "closure": [
-                
+                "New Years Day",
+                "Memorial Day",
+                "Independance Day",
+                "Labor Day",
+                "Thanksgiving Day",
+                "Christmas Eve",
+                "Christmas Day",
+                "General Conference Weekend (April and October)",
+                "Temple Shutdown: June 10th - June 24th",
+                "Temple Shutdown: January 10th - January 24th"
             ]
         }
     ]
