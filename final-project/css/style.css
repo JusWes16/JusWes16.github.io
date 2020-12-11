@@ -671,46 +671,128 @@ hr {
   color: #7a67cc;
   text-shadow: 1px 1px 0.5px black;
   font-size: 2.2em;
-  margin-top: 30px; }
+  margin-top: 30px;
+  grid-column: 1/-1; }
 
-#temples {
-  display: none; }
+main {
+  display: block;
+  max-width: 1300px;
+  margin: 0 auto; }
+  main #onpage_links {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 2;
+    grid-column: 1/-1; }
+    main #onpage_links a {
+      color: #7a67cc;
+      text-decoration: none;
+      font-size: 1.2em;
+      text-align: center;
+      padding: 4px; }
+    main #onpage_links a:hover {
+      color: #5900ff;
+      background-color: rgba(163, 163, 163, 0.582);
+      border-radius: 50px; }
+
+#boston, #oakland, #memphis, #draper {
+  display: grid;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #7a67cc;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black; }
+  #boston #weather, #boston #weather2, #boston #weather3, #boston #weather4, #oakland #weather, #oakland #weather2, #oakland #weather3, #oakland #weather4, #memphis #weather, #memphis #weather2, #memphis #weather3, #memphis #weather4, #draper #weather, #draper #weather2, #draper #weather3, #draper #weather4 {
+    grid-row: 3/4;
+    background-color: #a0a0a0;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    margin-bottom: 20px; }
+    #boston #weather section, #boston #weather2 section, #boston #weather3 section, #boston #weather4 section, #oakland #weather section, #oakland #weather2 section, #oakland #weather3 section, #oakland #weather4 section, #memphis #weather section, #memphis #weather2 section, #memphis #weather3 section, #memphis #weather4 section, #draper #weather section, #draper #weather2 section, #draper #weather3 section, #draper #weather4 section {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      #boston #weather section h3, #boston #weather2 section h3, #boston #weather3 section h3, #boston #weather4 section h3, #oakland #weather section h3, #oakland #weather2 section h3, #oakland #weather3 section h3, #oakland #weather4 section h3, #memphis #weather section h3, #memphis #weather2 section h3, #memphis #weather3 section h3, #memphis #weather4 section h3, #draper #weather section h3, #draper #weather2 section h3, #draper #weather3 section h3, #draper #weather4 section h3 {
+        grid-column: 1/-1;
+        color: white; }
+      #boston #weather section p:nth-child(2), #boston #weather2 section p:nth-child(2), #boston #weather3 section p:nth-child(2), #boston #weather4 section p:nth-child(2), #oakland #weather section p:nth-child(2), #oakland #weather2 section p:nth-child(2), #oakland #weather3 section p:nth-child(2), #oakland #weather4 section p:nth-child(2), #memphis #weather section p:nth-child(2), #memphis #weather2 section p:nth-child(2), #memphis #weather3 section p:nth-child(2), #memphis #weather4 section p:nth-child(2), #draper #weather section p:nth-child(2), #draper #weather2 section p:nth-child(2), #draper #weather3 section p:nth-child(2), #draper #weather4 section p:nth-child(2) {
+        grid-column: 1/-1;
+        font-size: 1.2em;
+        color: #372468;
+        font-weight: bold;
+        margin-top: 0; }
+      #boston #weather section img, #boston #weather2 section img, #boston #weather3 section img, #boston #weather4 section img, #oakland #weather section img, #oakland #weather2 section img, #oakland #weather3 section img, #oakland #weather4 section img, #memphis #weather section img, #memphis #weather2 section img, #memphis #weather3 section img, #memphis #weather4 section img, #draper #weather section img, #draper #weather2 section img, #draper #weather3 section img, #draper #weather4 section img {
+        grid-column: 1/-1;
+        display: block;
+        margin: 0 auto;
+        margin-top: -10px;
+        width: 70px; }
+  #boston section, #oakland section, #memphis section, #draper section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #boston section h2, #oakland section h2, #memphis section h2, #draper section h2 {
+      grid-column: 1/-1; }
+    #boston section p, #oakland section p, #memphis section p, #draper section p {
+      text-align: center; }
+    #boston section h3, #oakland section h3, #memphis section h3, #draper section h3 {
+      text-align: center;
+      font-size: 1.5em;
+      color: #dbdbdb;
+      text-shadow: 1px 1px 4px black; }
+    #boston section ul, #oakland section ul, #memphis section ul, #draper section ul {
+      margin: 0 auto; }
+    #boston section ul li:nth-child(odd), #oakland section ul li:nth-child(odd), #memphis section ul li:nth-child(odd), #draper section ul li:nth-child(odd) {
+      color: #161e8d; }
+    #boston section .contact p, #oakland section .contact p, #memphis section .contact p, #draper section .contact p {
+      text-align: center; }
+    #boston section .history, #oakland section .history, #memphis section .history, #draper section .history {
+      grid-column: 1/-1;
+      background-color: #3b1483;
+      padding-bottom: 10px; }
+    #boston section .history p, #oakland section .history p, #memphis section .history p, #draper section .history p {
+      padding: 5px; }
+    #boston section .session, #oakland section .session, #memphis section .session, #draper section .session {
+      padding-right: 10px; }
+    #boston section .closure, #oakland section .closure, #memphis section .closure, #draper section .closure {
+      grid-column: 1/-1; }
+    #boston section .closure ul, #oakland section .closure ul, #memphis section .closure ul, #draper section .closure ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 10px; }
+    #boston section .closure ul li, #oakland section .closure ul li, #memphis section .closure ul li, #draper section .closure ul li {
+      padding: 5px;
+      color: white; }
+    #boston section .closure ul li:nth-child(8), #boston section .closure ul li:nth-child(9), #boston section .closure ul li:nth-child(10), #oakland section .closure ul li:nth-child(8), #oakland section .closure ul li:nth-child(9), #oakland section .closure ul li:nth-child(10), #memphis section .closure ul li:nth-child(8), #memphis section .closure ul li:nth-child(9), #memphis section .closure ul li:nth-child(10), #draper section .closure ul li:nth-child(8), #draper section .closure ul li:nth-child(9), #draper section .closure ul li:nth-child(10) {
+      grid-column: 1/-1; }
+  #boston img, #oakland img, #memphis img, #draper img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0; }
+  #boston h2, #oakland h2, #memphis h2, #draper h2 {
+    font-size: 1.8em;
+    text-align: center;
+    text-shadow: 1px 1px 4px black; }
 
 @media only screen and (min-width: 700px) {
-  #temples {
+  main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    max-width: 80%;
-    margin: 0 auto;
-    margin-top: 40px; }
-    #temples a {
-      text-align: center;
-      text-decoration: none;
-      display: grid;
-      box-shadow: 2px 2px 4px black;
-      border: 1px solid #7a67cc;
-      transition: transform 0.7s; }
-      #temples a img {
-        max-width: 100%;
-        grid-row: 1/-1;
-        grid-column: 1/-1;
-        display: block; }
-      #temples a h2 {
-        grid-row: 1;
-        grid-column: 1/-1;
-        z-index: 5;
-        font-size: 1.8em;
-        color: #7a67cc;
-        text-shadow: 1px 1px 0.5px black; }
-    #temples a:hover {
-      transform: scale(1.03); } }
+    grid-template-columns: 1fr 1fr; } }
 @media only screen and (min-width: 900px) {
   #temples {
     grid-template-columns: repeat(3, 1fr); } }
-@media only screen and (min-width: 1200px) {
-  #temples {
-    grid-template-columns: repeat(4, 1fr); } }
+@media only screen and (min-width: 950px) {
+  main {
+    grid-template-columns: repeat(3, 1fr); } }
+@media only screen and (min-width: 1300px) {
+  main {
+    grid-template-columns: repeat(4, 1fr); }
+    main h1 {
+      padding-top: 20px; }
+
+  #onpage_links a {
+    display: none; } }
 h1 {
   text-align: center;
   color: #7a67cc;

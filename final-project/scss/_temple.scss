@@ -4,44 +4,138 @@
     text-shadow: 1px 1px 0.5px black;
     font-size: 2.2em;
     margin-top: 30px;
+    grid-column: 1/-1;
 }
-#temples { 
-    display: none;
+main{
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+    #onpage_links{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-row: 2;
+        grid-column: 1/-1;
+        a{
+            color: $primaryColor;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 4px;
+        }
+        a:hover{
+            color: rgb(89, 0, 255);
+            background-color: rgba(163, 163, 163, 0.582);
+            border-radius: 50px;
+        }
+    }
+}
+#boston, #oakland, #memphis, #draper {
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: $primaryColor;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    #weather, #weather2, #weather3, #weather4{
+        grid-row: 3/4;
+        background-color: $secondaryColor;
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px black;
+        margin-bottom: 20px;
+        section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            h3 {
+                grid-column: 1/-1;
+                color: white;
+            }
+            p:nth-child(2){
+                grid-column: 1/-1;
+                font-size: 1.2em;
+                color: rgb(55, 36, 104);
+                font-weight: bold;
+                margin-top: 0;
+            }
+            img{
+                grid-column: 1/-1;
+                display: block;
+                margin: 0 auto;
+                margin-top: -10px;
+                width: 70px;
+            }
+        }
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        h2{
+            grid-column: 1/-1;
+        }
+        p{
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+            font-size: 1.5em;
+            color: rgb(219, 219, 219);
+            text-shadow: 1px 1px 4px black;
+        }
+        ul{
+            margin: 0 auto;
+        }
+        ul li:nth-child(odd){
+            color: rgb(22, 30, 141);
+        }
+        .contact p{
+            text-align: center;
+        }
+        .history {
+            grid-column: 1/-1;
+            background-color: rgb(59, 20, 131);
+            padding-bottom: 10px;
+        }
+        .history p {
+            padding: 5px;
+        }
+        .session{
+            padding-right: 10px;
+        }
+        .closure{
+            grid-column: 1/-1;
+        }
+        .closure ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-bottom: 10px;
+        }
+        .closure ul li {
+            padding: 5px;
+            color: white;
+        }
+        .closure ul li:nth-child(8), .closure ul li:nth-child(9), .closure ul li:nth-child(10){
+            grid-column: 1/-1;
+        }
+    }
+    img {
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    h2 {
+        font-size: 1.8em;
+        text-align: center;
+        text-shadow: 1px 1px 4px black;
+    }
 }
 
 @media only screen and (min-width: 700px){
-    #temples {
+    main{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        max-width: 80%;
-        margin: 0 auto;
-        margin-top: 40px;
-        a {
-            text-align: center;
-            text-decoration: none;
-            display: grid;
-            box-shadow: 2px 2px 4px black;
-            border: 1px solid $primaryColor;
-            transition: transform 0.7s;
-            img{
-                max-width: 100%;
-                grid-row: 1/-1;
-                grid-column: 1/-1;
-                display: block;
-            }
-            h2{
-                grid-row: 1;
-                grid-column: 1/-1;
-                z-index: 5;
-                font-size: 1.8em;
-                color: $primaryColor;
-                text-shadow: 1px 1px 0.5px black;
-            }
-        }
-        a:hover {
-            transform: scale(1.03);
-        }
     }
 }
 
@@ -51,8 +145,19 @@
     }
 }
 
-@media only screen and (min-width:1200px){
-    #temples{
-        grid-template-columns: repeat(4,1fr);
+@media only screen and (min-width:950px){
+    main{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (min-width:1300px){
+    main{
+        grid-template-columns: repeat(4, 1fr);
+        h1{
+            padding-top: 20px;
+        }
+    }
+    #onpage_links a{
+        display: none;
     }
 }

@@ -4,7 +4,7 @@ fetch(URL1)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-
+ 
     document.getElementById('current').textContent = jsObject.list[0].weather[0].main;
     document.getElementById('temp').textContent = Math.round(jsObject.list[0].main.temp, 0);
     document.getElementById('humid').textContent = jsObject.list[0].main.humidity + '%';
