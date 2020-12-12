@@ -672,25 +672,23 @@ hr {
   text-shadow: 1px 1px 0.5px black;
   font-size: 2.2em;
   margin-top: 30px;
-  grid-column: 1/-1; }
-
-main {
+  grid-column: 1/-1;
   display: block;
   max-width: 1300px;
   margin: 0 auto; }
-  main #onpage_links {
+  #temples-content h1 #onpage_links {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row: 2;
     grid-column: 1/-1; }
-    main #onpage_links a {
+    #temples-content h1 #onpage_links a {
       color: #7a67cc;
       text-decoration: none;
       font-size: 1.2em;
       text-align: center;
       padding: 4px; }
-    main #onpage_links a:hover {
+    #temples-content h1 #onpage_links a:hover {
       color: #5900ff;
       background-color: rgba(163, 163, 163, 0.582);
       border-radius: 50px; }
@@ -776,56 +774,112 @@ main {
     text-shadow: 1px 1px 4px black; }
 
 @media only screen and (min-width: 700px) {
-  main {
+  #temples-content {
     display: grid;
     grid-template-columns: 1fr 1fr; } }
 @media only screen and (min-width: 900px) {
   #temples {
     grid-template-columns: repeat(3, 1fr); } }
 @media only screen and (min-width: 950px) {
-  main {
+  #temples-content {
     grid-template-columns: repeat(3, 1fr); } }
 @media only screen and (min-width: 1300px) {
-  main {
+  #temples-content {
     grid-template-columns: repeat(4, 1fr); }
-    main h1 {
+    #temples-content h1 {
       padding-top: 20px; }
-
-  #onpage_links a {
-    display: none; } }
-h1 {
+    #temples-content #onpage_links a {
+      display: none; } }
+#reservation-content #reviews {
+  display: none; }
+#reservation-content h1 {
   text-align: center;
   color: #7a67cc;
   text-shadow: 1px 1px 0.5px black; }
-
-form {
+#reservation-content form {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 80%;
   padding: 20px;
   background-color: #7a67cc;
-  margin: 20px;
+  margin: 0 auto;
   color: white;
   border: 1px solid black;
   border-left: 8px solid #3a248b;
   border-radius: 10px;
   font-size: 1.2em;
-  padding-top: 0; }
-
-label {
+  padding-top: 0;
+  box-shadow: 2px 2px 4px black; }
+#reservation-content label {
   margin-top: 10px; }
-
-input, select {
+#reservation-content input, #reservation-content select {
   width: 96%;
   margin-top: 8px;
   padding: 5px;
   display: block; }
-
-select {
+#reservation-content select {
   width: 99%;
   cursor: pointer; }
-
-textarea {
+#reservation-content textarea {
   display: block;
   max-width: 97%;
   margin: 0 auto; }
+#reservation-content .button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: rgba(196, 190, 204, 0.856);
+  border: 1px solid black;
+  box-shadow: none;
+  font-size: 1.1em;
+  transition: transform 0.7s, box-shadow 0.7s;
+  border-radius: 25px;
+  text-align: center; }
+#reservation-content .button:hover {
+  transform: scale(1.03);
+  border-color: black;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer; }
+
+@media only screen and (min-width: 700px) {
+  #reservation-content form {
+    max-width: 500px; } }
+@media only screen and (min-width: 1300px) {
+  #reservation-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #reservation-content form {
+      max-width: none; }
+    #reservation-content h1 {
+      grid-column: 1/-1;
+      margin-top: 30px;
+      margin-bottom: 50px; }
+    #reservation-content #reviews {
+      display: block;
+      margin: 0 auto;
+      border: 2px solid black;
+      background-color: #F6F6F6;
+      max-width: 70%; }
+      #reservation-content #reviews h2 {
+        text-align: center;
+        color: #7a67cc;
+        text-shadow: 1px 1px 0.5px black;
+        font-size: 1.6em; }
+      #reservation-content #reviews img {
+        max-width: 300px;
+        display: block; }
+      #reservation-content #reviews div {
+        max-width: 90%;
+        margin: 50px auto; }
+        #reservation-content #reviews div p {
+          padding: 5px; }
+      #reservation-content #reviews .review2 {
+        grid-column: 1;
+        grid-row: 2; }
+      #reservation-content #reviews .name {
+        margin-left: 15px;
+        margin-top: -20px;
+        position: relative; }
+      #reservation-content #reviews .stars {
+        width: 100px;
+        margin: -30px 0 0 40px; } }
