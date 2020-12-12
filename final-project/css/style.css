@@ -842,6 +842,28 @@ hr {
   box-shadow: 2px 2px 4px black;
   cursor: pointer; }
 
+#thanks-content h1 {
+  text-align: center;
+  color: #7a67cc;
+  text-shadow: 1px 1px 0.5px black;
+  font-size: 2.3em; }
+#thanks-content section {
+  border: 2px solid #7a67cc;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 400px;
+  box-shadow: 4px 4px 8px black; }
+#thanks-content h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.6em; }
+#thanks-content p {
+  text-align: center;
+  padding: 5px; }
+#thanks-content a {
+  color: #7a67cc; }
+
 @media only screen and (min-width: 700px) {
   #reservation-content form {
     max-width: 500px; } }

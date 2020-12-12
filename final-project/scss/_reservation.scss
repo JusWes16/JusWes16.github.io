@@ -60,6 +60,34 @@
     }
     
 }
+#thanks-content{
+    h1{
+        text-align: center;
+        color: $primaryColor;
+        text-shadow: 1px 1px 0.5px black;
+        font-size: 2.3em;
+    }
+    section{
+        border: 2px solid $primaryColor;
+        width: 95%;
+        margin: 0 auto;
+        max-width: 400px;
+        box-shadow: 4px 4px 8px black;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.6em;
+    }
+    p{
+        text-align: center;
+        padding: 5px;
+    }
+    a{
+        color: $primaryColor;
+    }
+}
 @media only screen and(min-width: 700px){
     #reservation-content{
         form{
