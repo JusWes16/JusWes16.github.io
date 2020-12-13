@@ -872,7 +872,8 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr; }
     #reservation-content form {
-      max-width: none; }
+      max-width: none;
+      margin-right: 20px; }
     #reservation-content h1 {
       grid-column: 1/-1;
       margin-top: 30px;
