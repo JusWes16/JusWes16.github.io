@@ -96,6 +96,9 @@
             grid-column: 1/2;
             margin-top: 120px;
             max-width: 700px;
+            iframe{
+                height: 200px;
+            }
         }
         #contact-form{
             grid-column: 2/3;
