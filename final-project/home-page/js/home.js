@@ -33,3 +33,13 @@ function service() {
     document.getElementById("services-more").classList.toggle("more");
 }
 
+//Function for resevation button
+function reserve(){
+    window.location.href='https://juswes16.github.io/final-project/reservations/reservation.html';
+}
+
+//Function for contact us button
+function contact(){
+    window.location.href='https://juswes16.github.io/final-project/contact-us/contact_us.html';
+}
+
