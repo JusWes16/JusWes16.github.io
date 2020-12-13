@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Temple Inn | Home</title>
+    <link rel="shortcut icon" href="images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <script src="js/contact_us.js"></script>
+</head>
+<body>
+    <header>
+        <a href="https://juswes16.github.io/final-project/home-page/index.html"><img src="images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png" alt=""></a>
+        <a class="ham" href="#" onclick="menu()">&#9776</a>
+    </header>
+   
+    <nav id="navi">
+        <ul>
+            <li><a href="https://juswes16.github.io/final-project/home-page/index.html" onclick="menu()">Home</a></li>
+            <li><a href="https://juswes16.github.io/final-project/temple-page/temples.html" onclick="menu()">Temples</a></li>
+            <li><a href="https://juswes16.github.io/final-project/reservations/reservation.html" onclick="menu()">Reservations</a></li>
+            <li id="test">
+                <button id="serv" href="#" onclick="service()">Services  &#9662;</button>
+                <div id="services-more">
+                    <a href="#" class="rec" onclick="service()">Receptions</a>
+                    <a href="#" class="full" onclick="service()">Full-time Missionaries</a>
+                </div>
+            </li>
+            <li><a class="active" href="#" onclick="menu()">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main id="contact-content">
+        <h1> Contact Us</h1>
+        <section id="info">
+            <p><b>Address:</b><i> 4800 Montgomery Ln #300, Bethesda, MD 20814</i></p>
+            <p><b>Email:</b> thetempleinn@temple.com</p>
+            <p><b>Phone:</b> (240)-986-3512</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370329374!2d-77.0977258490569!3d38.983255949383185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1607880437351!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+        <form method="GET" action="thank-you.html" id="contact">
+            <label>First Name: <input type="text" name="name" pattern="[A-Z a-z]+" minlength="5" required></label>
+            <label>Last Name: <input type="text" name="name" pattern="[A-Z a-z]+" minlength="5" required></label>
+            <label>Email: <input type="email" name="email" placeholder="example@email.com" required></label>
+            <label>Phone Number: <input type="tel" name="phone" required></label>
+            <label>Comments or Accommodations
+                <textarea id="comments" name="comments" rows="15" cols="50"></textarea>
+            </label>
+            <input class="button" form="contact" type="submit" value="Send Message">
+        </form>
+    </main>
+
+    <footer>
+        <div class="foot-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Temples</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p id="phone"><i class="material-icons" style="font-size: 0.9em;">local_phone</i> (240)-986-3512</p>
+            <p id="email"><i class="material-icons" style="font-size: 0.9em;">&#xe554;</i> thetempleinn@temple.com</p>
+            <p id="address"><i class="material-icons" style="font-size: 0.9em;">&#xe55f;</i> <i>4800 Montgomery Ln #300, Bethesda, MD 20814</i></p>
+            <div id="socials">
+                <a href="https://facebook.com" target='_blank'><img class="social-face" src="images/facebook.png" ></a>
+                <a href="https://instagram.com" target='_blank'><img class="social-insta" src="images/instagram.png" ></a>
+                <a href="https://twitter.com" target='_blank'><img class="social-twit" src="images/twitter.png" ></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

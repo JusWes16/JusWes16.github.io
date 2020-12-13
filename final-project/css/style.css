@@ -906,3 +906,5 @@ hr {
       #reservation-content #reviews .stars {
         width: 100px;
         margin: -30px 0 0 40px; } }
+#contact-content iframe {
+  width: 95%; }
