@@ -906,5 +906,86 @@ hr {
       #reservation-content #reviews .stars {
         width: 100px;
         margin: -30px 0 0 40px; } }
+#contact-content #info {
+  max-width: 500px;
+  margin: 0 auto; }
+#contact-content h1 {
+  text-align: center;
+  color: #7a67cc;
+  text-shadow: 1px 1px 0.5px black; }
+#contact-content p {
+  text-align: center;
+  padding: 5px; }
 #contact-content iframe {
-  width: 95%; }
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  border: 1px solid black;
+  box-shadow: 1px 1px 4px black; }
+#contact-content h2 {
+  text-align: center;
+  color: #7a67cc;
+  text-shadow: 1px 1px 0.5px black; }
+#contact-content #contact-form {
+  margin-top: 50px; }
+#contact-content form {
+  margin-top: 20px; }
+  #contact-content form label {
+    text-align: center; }
+  #contact-content form input {
+    display: block;
+    padding: 5px;
+    margin: 10px auto;
+    width: 85%;
+    text-align: center; }
+  #contact-content form textarea {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center; }
+  #contact-content form .button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #7a67cc;
+    color: white;
+    border: 1px solid black;
+    box-shadow: none;
+    font-size: 1.1em;
+    transition: transform 0.7s, box-shadow 0.7s;
+    border-radius: 25px;
+    text-align: center; }
+  #contact-content form .button:hover {
+    transform: scale(1.03);
+    border-color: black;
+    box-shadow: 2px 2px 4px black;
+    cursor: pointer; }
+
+#thank_you h1 {
+  text-align: center;
+  color: #7a67cc;
+  text-shadow: 1px 1px 0.5px black; }
+#thank_you p {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 300px; }
+
+@media only screen and (min-width: 1400px) {
+  #contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #contact-content h1 {
+      grid-column: 1/-1; }
+    #contact-content hr {
+      grid-column: 1/-1;
+      margin: 0 200px; }
+    #contact-content #info {
+      grid-column: 1/2;
+      margin-top: 100px;
+      max-width: 700px; }
+    #contact-content #contact-form {
+      grid-column: 2/3;
+      margin-top: 0; } }

@@ -1,7 +1,106 @@
 #contact-content{
-    background-color: red;
-    iframe{
-        width: 95%;
+    #info{
+        max-width: 500px;
+        margin: 0 auto;
     }
-} 
+    h1{
+        text-align: center;
+        color: $primaryColor;
+        text-shadow: 1px 1px 0.5px black;
+    }
+    p{
+        text-align: center;
+        padding: 5px;
+    }
+    iframe{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        border: 1px solid black;
+        box-shadow: 1px 1px 4px black;
+    }
+    h2{
+        text-align: center;
+        color: $primaryColor;
+        text-shadow: 1px 1px 0.5px black;
+    }
+    #contact-form{
+        margin-top: 50px;
+    }
+    form{
+        margin-top: 20px;
+        label{
+            text-align: center;
+        }
+        input{
+            display: block;
+            padding: 5px;
+            margin: 10px auto;
+            width: 85%;
+            text-align: center;
+        }
+        textarea{
+            display: block;
+            width: 95%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .button{
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: $primaryColor;
+            color: white;
+            border: 1px solid black;
+            box-shadow: none;
+            font-size: 1.1em;
+            transition: transform 0.7s, box-shadow 0.7s;
+            border-radius: 25px;
+            text-align: center;
+        }
+        .button:hover {
+            transform: scale(1.03);
+            border-color: black;
+            box-shadow: 2px 2px 4px black;
+            cursor: pointer;
+        }
+    }
+}
+#thank_you{
+    h1{
+        text-align: center;
+        color: $primaryColor;
+        text-shadow: 1px 1px 0.5px black;
+    }
+    p{
+        text-align: center;
+        padding: 10px;
+        border: 1px solid black;
+        margin: 0 auto;
+        width: 95%;
+        max-width: 300px;
+    }
+}
+@media only screen and (min-width:1400px){
+    #contact-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        h1{
+            grid-column: 1/-1;
+        }
+        hr{
+            grid-column: 1/-1;
+            margin: 0 200px;
+        }
+        #info{
+            grid-column: 1/2;
+            margin-top: 120px;
+            max-width: 700px;
+        }
+        #contact-form{
+            grid-column: 2/3;
+            margin-top: 0;
+        }
+    }
+}
  
