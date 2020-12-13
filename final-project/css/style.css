@@ -783,7 +783,7 @@ hr {
 @media only screen and (min-width: 950px) {
   #temples-content {
     grid-template-columns: repeat(3, 1fr); } }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
   #temples-content {
     grid-template-columns: repeat(4, 1fr); }
     #temples-content h1 {
@@ -867,7 +867,7 @@ hr {
 @media only screen and (min-width: 700px) {
   #reservation-content form {
     max-width: 500px; } }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
   #reservation-content {
     display: grid;
     grid-template-columns: 1fr 1fr; }
@@ -971,9 +971,11 @@ hr {
   border: 1px solid black;
   margin: 0 auto;
   width: 95%;
-  max-width: 300px; }
+  max-width: 300px;
+  box-shadow: 2px 2px 4px black;
+  margin-bottom: 30px; }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
   #contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr; }
