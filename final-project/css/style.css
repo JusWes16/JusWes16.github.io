@@ -976,6 +976,9 @@ hr {
   box-shadow: 2px 2px 4px black;
   margin-bottom: 30px; }
 
+@media only screen and (min-width: 700px) {
+  iframe {
+    height: 200px; } }
 @media only screen and (min-width: 1200px) {
   #contact-content {
     display: grid;
@@ -989,8 +992,6 @@ hr {
       grid-column: 1/2;
       margin-top: 120px;
       max-width: 700px; }
-      #contact-content #info iframe {
-        height: 200px; }
     #contact-content #contact-form {
       grid-column: 2/3;
       margin-top: 0; } }
