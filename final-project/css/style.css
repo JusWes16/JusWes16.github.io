@@ -1088,7 +1088,7 @@ hr {
   padding: 5px; }
 #full-time p {
   text-align: center;
-  background-color: #934bf0;
+  background-color: #7a67cc;
   padding: 25px 10px;
   color: whitesmoke; }
 #full-time hr {
@@ -1202,7 +1202,7 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
-    background-color: #934bf0;
+    background-color: #7a67cc;
     padding: 20px;
     color: white; }
     #info p {
