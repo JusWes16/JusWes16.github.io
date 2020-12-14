@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Temple Inn | Reception</title>
+    <link rel="shortcut icon" href="images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <script src="../js/services.js"></script>
+</head>
+<body>
+    <header>
+        <a href="https://juswes16.github.io/final-project/home-page/index.html"><img src="../images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png" alt=""></a>
+        <a class="ham" href="#" onclick="menu()">&#9776</a>
+    </header>
+   
+    <nav id="navi">
+        <ul>
+            <li><a href="https://juswes16.github.io/final-project/home-page/index.html" onclick="menu()">Home</a></li>
+            <li><a href="https://juswes16.github.io/final-project/temple-page/temples.html" onclick="menu()">Temples</a></li>
+            <li><a href="https://juswes16.github.io/final-project/reservations/reservation.html" onclick="menu()">Reservations</a></li>
+            <li id="test">
+                <button id="serv" class="active" href="#" onclick="service()">Services  &#9662;</button>
+                <div id="services-more">
+                    <a href="#" onclick="service()">Amenities</a>
+                    <a href="#" class="active" class="rec" onclick="service()">Receptions</a>
+                    <a href="#" class="full" onclick="service()">Full-time Missionaries</a>
+                </div>
+            </li>
+            <li><a href="https://juswes16.github.io/final-project/contact-us/contact_us.html" onclick="menu()">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main id="receptions">
+        <h1>We do receptions!</h1>   
+        <div id="rent">
+            <h3>Rent the space.</h3>
+            <p>
+                For an affordable price, rent our reception hall for 
+                any special occasion.
+            </p>
+        </div>
+        <div id="set_up">
+            <h3>Add professional set-up.</h3>
+            <p>
+                For a hassle free, picture perfect day, our team of professionals
+                will cover set-up and take-down.  
+            </p>
+        </div>
+        <div id="cater">
+            <h3>Add professional catering.</h3>
+            <p>
+                Food? We've got you covered. Our kitchen staff will ensure that
+                your day not only looks exquisite but tastes exquisite too. 
+            </p>
+            <div id="meal-options">
+                <h3>Meal options</h3>
+                <div>
+                    <h4>Option #1</h4>
+                    <ul>
+                        <li>Herb crusted chicken</li>
+                        <li>Scalloped potatoes</li>
+                        <li>Hand tossed salad</li>
+                        <li>Buttered rolls</li>
+                        <li>Assorted pastries</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Option #2</h4>
+                    <ul>
+                        <li>Smoked brisket</li>
+                        <li>Garlic mashed potatoes</li>
+                        <li>Steamed vegetables</li>
+                        <li>Crescent rolls</li>
+                        <li>Assorted pastries</li>
+                    </ul>
+                </div>
+                <div class="vegi">
+                    <h4>Option #3 (Vegetarian)</h4>
+                    <p>
+                        Replace the herb crusted chicken or the smoked brisket with a 
+                        creamy pesto pasta. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section id="reception-images">
+            <img src="images/wedding-tables.jpg" alt="recption tables">
+            <img src="images/cupcakes.jpg" alt="reception cupcakes">
+            <img src="images/mr-mrs.jpg" alt="reception mr mrs sign">
+            <img src="images/flowers.jpg" alt="recption flowers">
+        </section>
+        <section id="reception-contact">
+            <h2>For more information and to make you wedding reservation today, contact us below</h2>
+            <button type="button" onclick="contact()">Contact Us</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot-nav">
+            <ul>
+                <li><a href="https://juswes16.github.io/final-project/home-page/index.html">Home</a></li>
+                <li><a href="https://juswes16.github.io/final-project/temple-page/temples.html">Temples</a></li>
+                <li><a href="https://juswes16.github.io/final-project/reservations/reservation.html">Reservations</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="https://juswes16.github.io/final-project/contact-us/contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p id="phone"><i class="material-icons" style="font-size: 0.9em;">local_phone</i> (240)-986-3512</p>
+            <p id="email"><i class="material-icons" style="font-size: 0.9em;">&#xe554;</i> thetempleinn@temple.com</p>
+            <p id="address"><i class="material-icons" style="font-size: 0.9em;">&#xe55f;</i> <i>4800 Montgomery Ln #300, Bethesda, MD 20814</i></p>
+            <div id="socials">
+                <a href="https://facebook.com" target='_blank'><img class="social-face" src="../images/facebook.png" ></a>
+                <a href="https://instagram.com" target='_blank'><img class="social-insta" src="../images/instagram.png" ></a>
+                <a href="https://twitter.com" target='_blank'><img class="social-twit" src="../images/twitter.png" ></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

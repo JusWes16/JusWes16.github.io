@@ -138,7 +138,7 @@ fetch(URL2)
     let wind_chill = document.createElement("p");
     let image = document.createElement("img");
 
-    weather.textContent = "Current Weather Summery";
+    weather.textContent = "Current Weather Summery: Boston, Massachusetts";
     current.textContent = "Currently: " + jsObject.weather[0].main;
     temperature.textContent = "Temperature: " + Math.round(jsObject.main.temp, 0) + '\xB0F';
     humid.textContent = "Humidity: " + jsObject.main.humidity + '%';
@@ -182,7 +182,7 @@ fetch(URL3)
     let wind_chill = document.createElement("p");
     let image = document.createElement("img");
 
-    weather.textContent = "Current Weather Summery";
+    weather.textContent = "Current Weather Summery: Oakland, California";
     current.textContent = "Currently: " + jsObject.weather[0].main;
     temperature.textContent = "Temperature: " + Math.round(jsObject.main.temp, 0) + '\xB0F';
     humid.textContent = "Humidity: " + jsObject.main.humidity + '%';
@@ -226,7 +226,7 @@ fetch(URL4)
     let wind_chill = document.createElement("p");
     let image = document.createElement("img");
 
-    weather.textContent = "Current Weather Summery";
+    weather.textContent = "Current Weather Summery: Memphis, Tennessee";
     current.textContent = "Currently: " + jsObject.weather[0].main;
     temperature.textContent = "Temperature: " + Math.round(jsObject.main.temp, 0) + '\xB0F';
     humid.textContent = "Humidity: " + jsObject.main.humidity + '%';
@@ -270,7 +270,7 @@ fetch(URL5)
     let wind_chill = document.createElement("p");
     let image = document.createElement("img");
 
-    weather.textContent = "Current Weather Summery";
+    weather.textContent = "Current Weather Summery: Draper, Utah";
     current.textContent = "Currently: " + jsObject.weather[0].main;
     temperature.textContent = "Temperature: " + Math.round(jsObject.main.temp, 0) + '\xB0F';
     humid.textContent = "Humidity: " + jsObject.main.humidity + '%';

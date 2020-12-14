@@ -349,7 +349,7 @@ nav {
     text-decoration: underline; }
 
 .active {
-  color: #7a67cc;
+  color: #7a67cc !important;
   text-decoration: underline; }
 
 #serv {
@@ -995,3 +995,216 @@ hr {
     #contact-content #contact-form {
       grid-column: 2/3;
       margin-top: 0; } }
+#amenities {
+  max-width: 1000px;
+  margin: 0 auto; }
+  #amenities h1, #amenities h2 {
+    text-align: center;
+    color: #7a67cc;
+    text-shadow: 1px 1px 0.5px black; }
+  #amenities h1 {
+    margin-bottom: 40px; }
+  #amenities ul {
+    margin: 5px; }
+    #amenities ul li {
+      padding-right: 10px; }
+      #amenities ul li a {
+        color: #7a67cc; }
+
+@media only screen and (min-width: 1200px) {
+  #amenities {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #amenities h1 {
+      grid-column: 1/-1;
+      margin-top: 30px; } }
+#receptions h1, #receptions h2 {
+  text-align: center;
+  color: #7a67cc;
+  text-shadow: 1px 1px 0.5px black; }
+#receptions h3, #receptions h4 {
+  text-align: center;
+  color: #7a67cc; }
+#receptions h3 {
+  font-size: 1.4em; }
+#receptions p {
+  padding: 10px;
+  text-align: center;
+  margin-top: -15px; }
+#receptions #meal-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  #receptions #meal-options h3 {
+    grid-column: 1/-1;
+    margin-bottom: 0; }
+  #receptions #meal-options .vegi {
+    grid-column: 1/-1;
+    margin-top: -10px; }
+  #receptions #meal-options p {
+    padding: 10px;
+    text-align: center; }
+#receptions img {
+  width: 100%; }
+#receptions button {
+  display: block;
+  margin: 40px auto 60px auto;
+  background-color: rgba(196, 190, 204, 0.664);
+  border: 1px solid #7a67cc;
+  box-shadow: none;
+  font-size: 1.4em;
+  padding: 5px 50px;
+  transition: transform 0.7s, box-shadow 0.7s, background-color 1s;
+  border-radius: 25px; }
+#receptions button:hover {
+  background-color: #988bce;
+  color: white;
+  transform: scale(1.03);
+  border-color: black;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer; }
+
+@media only screen and (min-width: 1200px) {
+  #receptions h1 {
+    font-size: 2.3em;
+    margin: 30px 0; }
+
+  #reception-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 20px auto; }
+
+  #meal-options ul {
+    max-width: 180px;
+    margin: 0 auto; } }
+#full-time h1, #full-time h2 {
+  text-align: center;
+  color: #7a67cc;
+  text-shadow: 1px 1px 0.5px black; }
+#full-time h2 {
+  padding: 5px; }
+#full-time p {
+  text-align: center;
+  background-color: #934bf0;
+  padding: 25px 10px;
+  color: whitesmoke; }
+#full-time hr {
+  margin: 30px 20px; }
+#full-time ul {
+  margin: 0 auto; }
+
+#list {
+  width: 310px;
+  margin: 0 auto; }
+
+#images img {
+  width: 100%; }
+#images .img3, #images .img4 {
+  display: none; }
+
+#info-form form {
+  margin-top: 20px; }
+  #info-form form label {
+    text-align: center; }
+  #info-form form input {
+    display: block;
+    padding: 5px;
+    margin: 10px auto;
+    width: 85%;
+    text-align: center;
+    max-width: 600px; }
+  #info-form form textarea {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 500px; }
+  #info-form form .button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #7a67cc;
+    color: white;
+    border: 1px solid black;
+    box-shadow: none;
+    font-size: 1.1em;
+    transition: transform 0.7s, box-shadow 0.7s;
+    border-radius: 25px;
+    text-align: center; }
+  #info-form form .button:hover {
+    transform: scale(1.03);
+    border-color: black;
+    box-shadow: 2px 2px 4px black;
+    cursor: pointer; }
+
+#full-thanks h1 {
+  text-align: center;
+  color: #7a67cc;
+  text-shadow: 1px 1px 0.5px black;
+  margin-top: 40px; }
+#full-thanks p {
+  text-align: center;
+  margin-bottom: 50px; }
+
+@media only screen and (min-width: 700px) {
+  #full-time p {
+    padding: 40px 10px; }
+
+  #list {
+    padding-left: 20px; }
+
+  #images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center; }
+    #images .img3 {
+      display: block; }
+    #images #innner1, #images #inner2 {
+      height: 100%; }
+    #images #inner1 {
+      display: grid;
+      gap: 10px;
+      justify-items: center;
+      align-items: center; }
+    #images #inner2 {
+      display: grid;
+      gap: 30px; } }
+@media only screen and (min-width: 1200px) {
+  #full-time h1 {
+    margin-top: 30px; }
+  #full-time p {
+    font-size: large; }
+  #full-time h2 {
+    font-size: 1.8em; }
+
+  #images {
+    padding-left: 130px;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto; }
+    #images #inner1 {
+      justify-self: start; }
+      #images #inner1 img {
+        max-height: 220px; }
+    #images #inner2 {
+      gap: 10px;
+      justify-self: end;
+      align-self: end; }
+    #images .img4 {
+      display: block; }
+
+  #info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    background-color: #934bf0;
+    padding: 20px;
+    color: white; }
+    #info p {
+      margin-top: 50px;
+      font-size: large; } }

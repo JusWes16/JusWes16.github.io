@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Temple Inn | Contact Us</title>
+    <title>The Temple Inn | Amenities & Services</title>
     <link rel="shortcut icon" href="images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    <script src="js/contact_us.js"></script>
+    <script src="../js/services.js"></script>
 </head>
 <body>
     <header>
-        <a href="https://juswes16.github.io/final-project/home-page/index.html"><img src="images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png" alt=""></a>
+        <a href="https://juswes16.github.io/final-project/home-page/index.html"><img src="../images/801e3e43-5cb8-42c0-9f29-dcd2def62666_200x200.png" alt=""></a>
         <a class="ham" href="#" onclick="menu()">&#9776</a>
     </header>
    
@@ -25,38 +25,42 @@
             <li><a href="https://juswes16.github.io/final-project/temple-page/temples.html" onclick="menu()">Temples</a></li>
             <li><a href="https://juswes16.github.io/final-project/reservations/reservation.html" onclick="menu()">Reservations</a></li>
             <li id="test">
-                <button id="serv" href="#" onclick="service()">Services  &#9662;</button>
+                <button class="active" id="serv" onclick="service()">Services  &#9662;</button>
                 <div id="services-more">
-                    <a href="#" onclick="service()">Amenities</a>
+                    <a class="active" href="#" onclick="service()">Amenities</a>
                     <a href="#" class="rec" onclick="service()">Receptions</a>
                     <a href="#" class="full" onclick="service()">Full-time Missionaries</a>
                 </div>
             </li>
-            <li><a class="active" href="https://juswes16.github.io/final-project/contact-us/contact_us.html" onclick="menu()">Contact Us</a></li>
+            <li><a href="https://juswes16.github.io/final-project/contact-us/contact_us.html" onclick="menu()">Contact Us</a></li>
         </ul>
     </nav>
 
-    <main id="contact-content">
-        <h1> Contact Us</h1>
-        <hr>
-        <section id="info">
-            <p><b>Address:</b><i> 4800 Montgomery Ln #300, Bethesda, MD 20814</i></p>
-            <p><b>Email:</b> thetempleinn@temple.com</p>
-            <p><b>Phone:</b> (240)-986-3512</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370329374!2d-77.0977258490569!3d38.983255949383185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1607880437351!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <main id="amenities">
+        <h1>Our Amenities & Services</h1>
+        <section id="free-amenities">
+            <h2>Included Amenities</h2>
+            <ul>
+                <li>Breakfast</li>
+                <li>Exercise/workout room</li>
+                <li>Indoor pool</li>
+                <li>WiFi high-speed internet access and smart TVs</li>
+                <li>Parking</li>
+                <li>Temple shuttle</li>
+                <li>Family history consultation and family ordinance card service</li>
+            </ul>
         </section>
-        <section id="contact-form">
-            <h2>Send Us a Message</h2>
-            <form method="GET" action="thank-you.html" id="contact">
-                <input type="text" name="name" pattern="[A-Z a-z]+" minlength="5" placeholder="First Name" required>
-                <input type="text" name="name" pattern="[A-Z a-z]+" minlength="5" placeholder="Last Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="tel" name="phone" placeholder="Phone" required></label>
-                <textarea id="comments" name="comments" rows="15" cols="50" placeholder="Message"></textarea>
-                <input class="button" form="contact" type="submit" value="Send Message">
-            </form>
+        <section id="special-services">
+            <h2>Specialized Services</h2>
+            <ul>
+                <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</li>
+                <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+                <li>Long-term stay accommodations in kitchenette suites for full-time temple missionaries (learn more <a href="#">here</a>)</li>
+                <li>Temple history themed reception and sitting area</li>
+                <li>A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving (learn more <a href="#">here</a>)</li>
+                <li>A family search center that supports family search and ordinance work</li>
+            </ul>
         </section>
-        
     </main>
 
     <footer>
@@ -75,9 +79,9 @@
             <p id="email"><i class="material-icons" style="font-size: 0.9em;">&#xe554;</i> thetempleinn@temple.com</p>
             <p id="address"><i class="material-icons" style="font-size: 0.9em;">&#xe55f;</i> <i>4800 Montgomery Ln #300, Bethesda, MD 20814</i></p>
             <div id="socials">
-                <a href="https://facebook.com" target='_blank'><img class="social-face" src="images/facebook.png" ></a>
-                <a href="https://instagram.com" target='_blank'><img class="social-insta" src="images/instagram.png" ></a>
-                <a href="https://twitter.com" target='_blank'><img class="social-twit" src="images/twitter.png" ></a>
+                <a href="https://facebook.com" target='_blank'><img class="social-face" src="../images/facebook.png" ></a>
+                <a href="https://instagram.com" target='_blank'><img class="social-insta" src="../images/instagram.png" ></a>
+                <a href="https://twitter.com" target='_blank'><img class="social-twit" src="../images/twitter.png" ></a>
             </div>
         </div>
     </footer>
