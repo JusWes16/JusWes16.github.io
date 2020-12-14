@@ -743,7 +743,7 @@ hr {
     #boston section ul, #oakland section ul, #memphis section ul, #draper section ul {
       margin: 0 auto; }
     #boston section ul li:nth-child(odd), #oakland section ul li:nth-child(odd), #memphis section ul li:nth-child(odd), #draper section ul li:nth-child(odd) {
-      color: #161e8d; }
+      color: #232557; }
     #boston section .contact p, #oakland section .contact p, #memphis section .contact p, #draper section .contact p {
       text-align: center; }
     #boston section .history, #oakland section .history, #memphis section .history, #draper section .history {
