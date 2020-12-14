@@ -1198,13 +1198,13 @@ hr {
     #images .img4 {
       display: block; }
 
-  #info {
+  #info-full {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
     background-color: #7a67cc;
     padding: 20px;
     color: white; }
-    #info p {
+    #info-full p {
       margin-top: 50px;
       font-size: large; } }
